@@ -1,7 +1,8 @@
 %% Short symbol commands for LaTex
 %% Author: Arindam Bose
-%% Version: 1.0.7
-%% Last update: 03-29-2019
+%% Version: 1.0.15
+%% Last update: 05-08-2019
+%% Requires packages: algpseudocode
 
 % small English alphabets
 \def \ba           {\boldsymbol{a}}
@@ -100,8 +101,59 @@
 \def \bOmega       {\boldsymbol{\Omega}}
 
 % mathbf
-\def \x            {\mathbf x}
-\def \y            {\mathbf y}
+\def \mba          {\mathbf{a}}
+\def \mbb          {\mathbf{b}}
+\def \mbc          {\mathbf{c}}
+\def \mbd          {\mathbf{d}}
+\def \mbe          {\mathbf{e}}
+\def \mbf          {\mathbf{f}}
+\def \mbg          {\mathbf{g}}
+\def \mbh          {\mathbf{h}}
+\def \mbi          {\mathbf{i}}
+\def \mbj          {\mathbf{j}}
+\def \mbk          {\mathbf{k}}
+\def \mbl          {\mathbf{l}}
+\def \mbm          {\mathbf{m}}
+\def \mbn          {\mathbf{n}}
+\def \mbo          {\mathbf{o}}
+\def \mbp          {\mathbf{p}}
+\def \mbq          {\mathbf{q}}
+\def \mbr          {\mathbf{r}}
+\def \mbs          {\mathbf{s}}
+\def \mbt          {\mathbf{t}}
+\def \mbu          {\mathbf{u}}
+\def \mbv          {\mathbf{v}}
+\def \mbw          {\mathbf{w}}
+\def \mbx          {\mathbf{x}}
+\def \mby          {\mathbf{y}}
+\def \mbz          {\mathbf{z}}
+
+\def \mbA          {\mathbf{A}}
+\def \mbB          {\mathbf{B}}
+\def \mbC          {\mathbf{C}}
+\def \mbD          {\mathbf{D}}
+\def \mbE          {\mathbf{E}}
+\def \mbF          {\mathbf{F}}
+\def \mbG          {\mathbf{G}}
+\def \mbH          {\mathbf{H}}
+\def \mbI          {\mathbf{I}}
+\def \mbJ          {\mathbf{J}}
+\def \mbK          {\mathbf{K}}
+\def \mbL          {\mathbf{L}}
+\def \mbM          {\mathbf{M}}
+\def \mbN          {\mathbf{N}}
+\def \mbO          {\mathbf{O}}
+\def \mbP          {\mathbf{P}}
+\def \mbQ          {\mathbf{Q}}
+\def \mbR          {\mathbf{R}}
+\def \mbS          {\mathbf{S}}
+\def \mbT          {\mathbf{T}}
+\def \mbU          {\mathbf{U}}
+\def \mbV          {\mathbf{V}}
+\def \mbW          {\mathbf{W}}
+\def \mbX          {\mathbf{X}}
+\def \mbY          {\mathbf{Y}}
+\def \mbZ          {\mathbf{Z}}
 
 % numbers
 \def \bzero        {\boldsymbol{0}}
@@ -115,23 +167,32 @@
 \def \probP        {\mathbb{P}}
 \def \rationalQ    {\mathbb{Q}}
 \def \realR        {\mathbb{R}}
+\def \realRp       {\mathbb{R}_{+}}
+\def \realRn       {\mathbb{R}_{-}}
 \def \integerZ     {\mathbb{Z}}
 
 % mathbb
 \def \calR         {\mathcal{R}}
 \def \calI         {\mathcal{I}}
+\def \calN         {\mathcal{N}}
 \def \calL         {\mathcal{L}}
 \def \calX         {\mathcal{X}}
 \def \calY         {\mathcal{Y}}
 
 % matrix terms
-\def \tr           {\text{Tr}}
-\def \vec          {\text{vec}}
-\def \diag         {\text{diag}}
-\def \arg          {\text{arg}}
-\def \sgn          {\text{sgn}}
+\def \tr           {\mathrm{tr}}
+\def \vec          {\mathrm{vec}}
+\def \diag         {\mathrm{Diag}}
+\def \bdiag        {\mathbf{Diag}}
+\def \cov          {\mathrm{Cov}}
+\def \bcov         {\mathbf{Cov}}
+\def \arg          {\mathrm{arg}}
+\def \sgn          {\mathrm{sgn}}
 
 % misc
+\def \asin         {\sin^{-1}}
+\def \acos         {\cos^{-1}}
+\def \atan         {\tan^{-1}}
 \def \implies      {\Rightarrow}
 \def \half         {\frac{1}{2}}
 \def \roothalf     {\frac{1}{\sqrt{2}}}
@@ -142,9 +203,12 @@
 \def \ejomg        {e^{j\omega}}
 \def \ejmomg       {e^{-j\omega}}
 \def \zinv         {z^{-1}}
-\def \st           {\text{s.t.}}
-\def \other        {\text{otherwise}}
-\def \elsew        {\text{elsewhere}}
+\def \st           {\mathrm{s.t.}}
+\def \ow           {\mathrm{otherwise}}
+\def \ew           {\mathrm{elsewhere}}
+\def \degree       {^\circ}
+\def \Oh           {\mathcal{O}}
+\def \oh           {o}
 
 
 % Theorem-like environments (defs, lemmas numbered like Theorems)
@@ -168,5 +232,7 @@
 \newcommand{\CorLabel}[1]  {\label{cor:#1}}
 \newcommand{\ExmRef}[1]    {\ref{exm:#1}}
 \newcommand{\ExmLabel}[1]  {\label{exm:#1}}
+
+% algorithms
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
 \renewcommand{\algorithmicensure}{\textbf{Initialize:}}
