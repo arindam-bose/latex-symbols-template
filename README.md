@@ -84,7 +84,7 @@ Required packages:
 ### Sets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| \binaryB | <img src="https://latex.codecogs.com/gif.latex?\mathbb{B}" /> | \complexC | <img src="https://latex.codecogs.com/gif.latex?\mathbb{C}" /> | \expecE | <img src="https://latex.codecogs.com/gif.latex?\mathdbb{E}" /> | \naturalN | <img src="https://latex.codecogs.com/gif.latex?\mathbb{N}" /> |
+| \binaryB | <img src="https://latex.codecogs.com/gif.latex?\mathbb{B}" /> | \complexC | <img src="https://latex.codecogs.com/gif.latex?\mathbb{C}" /> | \expecE | <img src="https://latex.codecogs.com/gif.latex?\mathbb{E}" /> | \naturalN | <img src="https://latex.codecogs.com/gif.latex?\mathbb{N}" /> |
 | \probP | <img src="https://latex.codecogs.com/gif.latex?\mathbb{P}" /> | \rationalQ | <img src="https://latex.codecogs.com/gif.latex?\mathbb{Q}" /> | \realR | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}" /> | \realRp | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}_{+}" /> |
 | \realRn | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}_{-}" /> | \integerZ | <img src="https://latex.codecogs.com/gif.latex?\mathbb{Z}" /> |
 
