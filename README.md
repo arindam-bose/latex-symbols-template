@@ -1,13 +1,13 @@
 # Latex symbols template
 Short symbol commands for <img src="https://latex.codecogs.com/gif.latex?\LaTeX" title="\LaTeX" />
 
-usage: \input{symbols} after the \usepackage{} headers
+usage: `\input{symbols}` after all `\usepackage{}` headers
 
 Required packages: 
-1. dsfont
-2. algpseudocode
+1. `dsfont`
+2. `algpseudocode`
 
-### Small English alphabets
+### Lower case bold English alphabets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | \ba | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{a}" /> | \bb | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{b}" /> | \bc | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{c}" /> | \bd | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{d}" /> |
@@ -18,7 +18,7 @@ Required packages:
 | \bu | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{u}" /> | \bv | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{v}" /> | \bw | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{w}" /> | \bx | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{x}" /> |
 | \by | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{y}" /> | \bz | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{z}" /> |
 
-### Capital English alphabets
+### Upper case bold English alphabets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | \bA | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{A}" /> | \bB | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{B}" /> | \bC | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{C}" /> | \bD | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{D}" /> |
@@ -29,7 +29,7 @@ Required packages:
 | \bU | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{U}" /> | \bV | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{V}" /> | \bW | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{W}" /> | \bX | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{X}" /> |
 | \bY | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{Y}" /> | \bZ | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{Z}" /> |
 
-### Greek alphabets
+### Bold Greek alphabets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | \balpha | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\alpha}" /> | \bbeta | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\beta}" /> | \bgamma | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\gamma}" /> | \bGamma | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Gamma}" /> |
@@ -43,7 +43,7 @@ Required packages:
 | \bPhi | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Phi}" /> | \bchi | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\chi}" /> | \bpsi | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\psi}" /> | \bPsi | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Psi}" /> |
 | \bomega | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\omega}" /> | \bOmega | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Omega}" /> |
 
-### Mathbf small English alphabets
+### Mathbf lower case English alphabets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | \mba | <img src="https://latex.codecogs.com/gif.latex?\mathbf{a}" /> | \mbb | <img src="https://latex.codecogs.com/gif.latex?\mathbf{b}" /> | \mbc | <img src="https://latex.codecogs.com/gif.latex?\mathbf{c}" /> | \mbd | <img src="https://latex.codecogs.com/gif.latex?\mathbf{d}" /> |
@@ -54,7 +54,7 @@ Required packages:
 | \mbu | <img src="https://latex.codecogs.com/gif.latex?\mathbf{u}" /> | \mbv | <img src="https://latex.codecogs.com/gif.latex?\mathbf{v}" /> | \mbw | <img src="https://latex.codecogs.com/gif.latex?\mathbf{w}" /> | \mbx | <img src="https://latex.codecogs.com/gif.latex?\mathbf{x}" /> |
 | \mby | <img src="https://latex.codecogs.com/gif.latex?\mathbf{y}" /> | \mbz | <img src="https://latex.codecogs.com/gif.latex?\mathbf{z}" /> |
 
-### Mathbf capital English alphabets
+### Mathbf upper case English alphabets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | \mbA | <img src="https://latex.codecogs.com/gif.latex?\mathbf{A}" /> | \mbB | <img src="https://latex.codecogs.com/gif.latex?\mathbf{B}" /> | \mbC | <img src="https://latex.codecogs.com/gif.latex?\mathbf{C}" /> | \mbD | <img src="https://latex.codecogs.com/gif.latex?\mathbf{D}" /> |
@@ -65,7 +65,7 @@ Required packages:
 | \mbU | <img src="https://latex.codecogs.com/gif.latex?\mathbf{U}" /> | \mbV | <img src="https://latex.codecogs.com/gif.latex?\mathbf{V}" /> | \mbW | <img src="https://latex.codecogs.com/gif.latex?\mathbf{W}" /> | \mbX | <img src="https://latex.codecogs.com/gif.latex?\mathbf{X}" /> |
 | \mbY | <img src="https://latex.codecogs.com/gif.latex?\mathbf{Y}" /> | \mbZ | <img src="https://latex.codecogs.com/gif.latex?\mathbf{Z}" /> |
 
-### Caligraphy capital English alphabets
+### Caligraphy upper case English alphabets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | \calA | <img src="https://latex.codecogs.com/gif.latex?\mathcal{A}" /> | \calB | <img src="https://latex.codecogs.com/gif.latex?\mathcal{B}" /> | \calC | <img src="https://latex.codecogs.com/gif.latex?\mathcal{C}" /> | \calD | <img src="https://latex.codecogs.com/gif.latex?\mathcal{D}" /> |
