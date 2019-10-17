@@ -1,10 +1,10 @@
 %% Short symbol commands for LaTex
 %% Author: Arindam Bose
-%% Version: 1.0.20
+%% Version: 1.0.21
 %% Last update: 10-17-2019
 %% Requires packages: dsfont, algpseudocode
 
-% small English alphabets
+% Lower case bold English alphabets
 \def \ba           {\boldsymbol{a}}
 \def \bb           {\boldsymbol{b}}
 \def \bc           {\boldsymbol{c}}
@@ -32,7 +32,7 @@
 \def \by           {\boldsymbol{y}}
 \def \bz           {\boldsymbol{z}}
 
-% capital English alphabets
+% Upper case bold English alphabets
 \def \bA           {\boldsymbol{A}}
 \def \bB           {\boldsymbol{B}}
 \def \bC           {\boldsymbol{C}}
@@ -60,7 +60,7 @@
 \def \bY           {\boldsymbol{Y}}
 \def \bZ           {\boldsymbol{Z}}
 
-% Greek alphabets
+% Bold Greek alphabets
 \def \balpha       {\boldsymbol{\alpha}}
 \def \bbeta        {\boldsymbol{\beta}}
 \def \bgamma       {\boldsymbol{\gamma}}
@@ -100,7 +100,7 @@
 \def \bomega       {\boldsymbol{\omega}}
 \def \bOmega       {\boldsymbol{\Omega}}
 
-% mathbf
+% Mathbf lower case English alphabets
 \def \mba          {\mathbf{a}}
 \def \mbb          {\mathbf{b}}
 \def \mbc          {\mathbf{c}}
@@ -128,6 +128,7 @@
 \def \mby          {\mathbf{y}}
 \def \mbz          {\mathbf{z}}
 
+% Mathbf upper case English alphabets
 \def \mbA          {\mathbf{A}}
 \def \mbB          {\mathbf{B}}
 \def \mbC          {\mathbf{C}}
@@ -155,23 +156,7 @@
 \def \mbY          {\mathbf{Y}}
 \def \mbZ          {\mathbf{Z}}
 
-% numbers
-\def \bzero        {\boldsymbol{0}}
-\def \bone         {\boldsymbol{1}}
-
-% mathbb
-\def \binaryB      {\mathds{B}}
-\def \complexC     {\mathds{C}}
-\def \expecE       {\mathds{E}}
-\def \naturalN     {\mathds{N}}
-\def \probP        {\mathds{P}}
-\def \rationalQ    {\mathds{Q}}
-\def \realR        {\mathds{R}}
-\def \realRp       {\mathds{R}_{+}}
-\def \realRn       {\mathds{R}_{-}}
-\def \integerZ     {\mathds{Z}}
-
-% mathbb
+% Caligraphy upper case English alphabets
 \def \calA         {\mathcal{A}}
 \def \calB         {\mathcal{B}}
 \def \calC         {\mathcal{C}}
@@ -199,6 +184,24 @@
 \def \calY         {\mathcal{Y}}
 \def \calZ         {\mathcal{Z}}
 
+% Numbers
+\def \bzero        {\boldsymbol{0}}
+\def \bone         {\boldsymbol{1}}
+
+% Sets
+\def \binaryB      {\mathds{B}}
+\def \complexC     {\mathds{C}}
+\def \expecE       {\mathds{E}}
+\def \naturalN     {\mathds{N}}
+\def \probP        {\mathds{P}}
+\def \rationalQ    {\mathds{Q}}
+\def \realR        {\mathds{R}}
+\def \realRp       {\mathds{R}_{+}}
+\def \realRn       {\mathds{R}_{-}}
+\def \integerZ     {\mathds{Z}}
+
+
+
 % matrix terms
 \def \tr           {\mathrm{tr}}
 \def \vec          {\mathrm{vec}}
@@ -209,7 +212,7 @@
 \def \ccov         {\mathrm{Cov}}
 \def \bcov         {\mathbf{cov}}
 
-% misc
+% Misc
 \def \asin         {\sin^{-1}}
 \def \acos         {\cos^{-1}}
 \def \atan         {\tan^{-1}}
@@ -236,6 +239,10 @@
 \def \Oh           {\mathcal{O}}
 \def \oh           {o}
 
+% Text colors
+\def\blue#1{\textcolor{blue}{#1}}
+\def\red#1{\textcolor{red}{#1}}
+\def\green#1{\textcolor{green}{#1}}
 
 % Theorem-like environments (defs, lemmas numbered like Theorems)
 \newtheorem{Theorem}{Theorem}%[section]
@@ -262,8 +269,3 @@
 % algorithms
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
 \renewcommand{\algorithmicensure}{\textbf{Initialize:}}
-
-% coloredtexts
-\def\blue#1{\textcolor{blue}{#1}}
-\def\red#1{\textcolor{red}{#1}}
-\def\green#1{\textcolor{green}{#1}}
