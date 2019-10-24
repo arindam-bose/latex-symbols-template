@@ -1,7 +1,9 @@
 # Latex symbols template
 Short symbol commands for <img src="https://latex.codecogs.com/gif.latex?\LaTeX" title="\LaTeX" />
 
-usage: `\input{symbols}` after all `\usepackage{}` headers
+usage: 
+1. Download the `symbols.tex` file and put is in the same folder as that of the main `.tex` file.
+2. Add `\input{symbols}` after all `\usepackage{}` headers in the main `.tex` file.
 
 Required packages: 
 1. `dsfont`
