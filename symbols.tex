@@ -1,270 +1,333 @@
 %% Short symbol commands for LaTex
 %% Author: Arindam Bose
-%% Version: 1.0.21
-%% Last update: 10-17-2019
-%% Requires packages: dsfont, algpseudocode
+%% Version: 2.0.01
+%% Last update: 12-18-2019
+%% Requires packages: xcolor, dsfont, algpseudocode
+\usepackage{dsfont, algpseudocode}
+\usepackage[dvipsnames]{xcolor}
 
 % Lower case bold English alphabets
-\def \ba           {\boldsymbol{a}}
-\def \bb           {\boldsymbol{b}}
-\def \bc           {\boldsymbol{c}}
-\def \bd           {\boldsymbol{d}}
-\def \be           {\boldsymbol{e}}
-\def \bdf          {\boldsymbol{f}}
-\def \bg           {\boldsymbol{g}}
-\def \bh           {\boldsymbol{h}}
-\def \bi           {\boldsymbol{i}}
-\def \bj           {\boldsymbol{j}}
-\def \bk           {\boldsymbol{k}}
-\def \bl           {\boldsymbol{l}}
-\def \bm           {\boldsymbol{m}}
-\def \bn           {\boldsymbol{n}}
-\def \bo           {\boldsymbol{o}}
-\def \bp           {\boldsymbol{p}}
-\def \bq           {\boldsymbol{q}}
-\def \br           {\boldsymbol{r}}
-\def \bs           {\boldsymbol{s}}
-\def \bt           {\boldsymbol{t}}
-\def \bu           {\boldsymbol{u}}
-\def \bv           {\boldsymbol{v}}
-\def \bw           {\boldsymbol{w}}
-\def \bx           {\boldsymbol{x}}
-\def \by           {\boldsymbol{y}}
-\def \bz           {\boldsymbol{z}}
+\def \ba           		{\boldsymbol{a}}
+\def \bb           		{\boldsymbol{b}}
+\def \bc           		{\boldsymbol{c}}
+\def \bd           		{\boldsymbol{d}}
+\def \be           		{\boldsymbol{e}}
+\def \bdf          		{\boldsymbol{f}}
+\def \bg           		{\boldsymbol{g}}
+\def \bh           		{\boldsymbol{h}}
+\def \bi           		{\boldsymbol{i}}
+\def \bj           		{\boldsymbol{j}}
+\def \bk           		{\boldsymbol{k}}
+\def \bl           		{\boldsymbol{l}}
+\def \bm           		{\boldsymbol{m}}
+\def \bn           		{\boldsymbol{n}}
+\def \bo           		{\boldsymbol{o}}
+\def \bp          	 	{\boldsymbol{p}}
+\def \bq           		{\boldsymbol{q}}
+\def \br           		{\boldsymbol{r}}
+\def \bs           		{\boldsymbol{s}}
+\def \bt           		{\boldsymbol{t}}
+\def \bu           		{\boldsymbol{u}}
+\def \bv           		{\boldsymbol{v}}
+\def \bw           		{\boldsymbol{w}}
+\def \bx           		{\boldsymbol{x}}
+\def \by           		{\boldsymbol{y}}
+\def \bz           		{\boldsymbol{z}}
 
 % Upper case bold English alphabets
-\def \bA           {\boldsymbol{A}}
-\def \bB           {\boldsymbol{B}}
-\def \bC           {\boldsymbol{C}}
-\def \bD           {\boldsymbol{D}}
-\def \bE           {\boldsymbol{E}}
-\def \bF           {\boldsymbol{F}}
-\def \bG           {\boldsymbol{G}}
-\def \bH           {\boldsymbol{H}}
-\def \bI           {\boldsymbol{I}}
-\def \bJ           {\boldsymbol{J}}
-\def \bK           {\boldsymbol{K}}
-\def \bL           {\boldsymbol{L}}
-\def \bN           {\boldsymbol{N}}
-\def \bM           {\boldsymbol{M}}
-\def \bO           {\boldsymbol{O}}
-\def \bP           {\boldsymbol{P}}
-\def \bQ           {\boldsymbol{Q}}
-\def \bR           {\boldsymbol{R}}
-\def \bS           {\boldsymbol{S}}
-\def \bT           {\boldsymbol{T}}
-\def \bU           {\boldsymbol{U}}
-\def \bV           {\boldsymbol{V}}
-\def \bW           {\boldsymbol{W}}
-\def \bX           {\boldsymbol{X}}
-\def \bY           {\boldsymbol{Y}}
-\def \bZ           {\boldsymbol{Z}}
+\def \bA           		{\boldsymbol{A}}
+\def \bB           		{\boldsymbol{B}}
+\def \bC           		{\boldsymbol{C}}
+\def \bD           		{\boldsymbol{D}}
+\def \bE           		{\boldsymbol{E}}
+\def \bF           		{\boldsymbol{F}}
+\def \bG           		{\boldsymbol{G}}
+\def \bH           		{\boldsymbol{H}}
+\def \bI           		{\boldsymbol{I}}
+\def \bJ           		{\boldsymbol{J}}
+\def \bK           		{\boldsymbol{K}}
+\def \bL           		{\boldsymbol{L}}
+\def \bN           		{\boldsymbol{N}}
+\def \bM           		{\boldsymbol{M}}
+\def \bO           		{\boldsymbol{O}}
+\def \bP           		{\boldsymbol{P}}
+\def \bQ           		{\boldsymbol{Q}}
+\def \bR           		{\boldsymbol{R}}
+\def \bS           		{\boldsymbol{S}}
+\def \bT          		{\boldsymbol{T}}
+\def \bU           		{\boldsymbol{U}}
+\def \bV           		{\boldsymbol{V}}
+\def \bW           		{\boldsymbol{W}}
+\def \bX           		{\boldsymbol{X}}
+\def \bY           		{\boldsymbol{Y}}
+\def \bZ           		{\boldsymbol{Z}}
 
 % Bold Greek alphabets
-\def \balpha       {\boldsymbol{\alpha}}
-\def \bbeta        {\boldsymbol{\beta}}
-\def \bgamma       {\boldsymbol{\gamma}}
-\def \bGamma       {\boldsymbol{\Gamma}}
-\def \bdelta       {\boldsymbol{\delta}}
-\def \bDelta       {\boldsymbol{\Delta}}
-\def \bepsilon     {\boldsymbol{\epsilon}}
-\def \bvarepsilon  {\boldsymbol{\varepsilon}}
-\def \bzeta        {\boldsymbol{\zeta}}
-\def \bdeta        {\boldsymbol{\eta}}
-\def \btheta       {\boldsymbol{\theta}}
-\def \bvartheta    {\boldsymbol{\vartheta}}
-\def \bTheta       {\boldsymbol{\Theta}}
-\def \biota        {\boldsymbol{\iota}}
-\def \bkappa       {\boldsymbol{\kappa}}
-\def \blambda      {\boldsymbol{\lambda}}
-\def \bLambda      {\boldsymbol{\Lambda}}
-\def \bmu          {\boldsymbol{\mu}}
-\def \bnu          {\boldsymbol{\nu}}
-\def \bxi          {\boldsymbol{\xi}}
-\def \bXi          {\boldsymbol{\Xi}}
-\def \bpi          {\boldsymbol{\pi}}
-\def \bPi          {\boldsymbol{\Pi}}
-\def \brho         {\boldsymbol{\rho}}
-\def \bvarrho      {\boldsymbol{\varrho}}
-\def \bsigma       {\boldsymbol{\sigma}}
-\def \bSigma       {\boldsymbol{\Sigma}}
-\def \btau         {\boldsymbol{\tau}}
-\def \bupsilon     {\boldsymbol{\upsilon}}
-\def \bUpsilon     {\boldsymbol{\Upsilon}}
-\def \bphi         {\boldsymbol{\phi}}
-\def \bvarphi      {\boldsymbol{\varphi}}
-\def \bPhi         {\boldsymbol{\Phi}}
-\def \bchi         {\boldsymbol{\chi}}
-\def \bpsi         {\boldsymbol{\psi}}
-\def \bPsi         {\boldsymbol{\Psi}}
-\def \bomega       {\boldsymbol{\omega}}
-\def \bOmega       {\boldsymbol{\Omega}}
+\def \balpha       		{\boldsymbol{\alpha}}
+\def \bbeta        		{\boldsymbol{\beta}}
+\def \bgamma       		{\boldsymbol{\gamma}}
+\def \bGamma       		{\boldsymbol{\Gamma}}
+\def \bdelta       		{\boldsymbol{\delta}}
+\def \bDelta       		{\boldsymbol{\Delta}}
+\def \bepsilon     		{\boldsymbol{\epsilon}}
+\def \bvarepsilon  		{\boldsymbol{\varepsilon}}
+\def \bzeta        		{\boldsymbol{\zeta}}
+\def \bdeta        		{\boldsymbol{\eta}}
+\def \btheta       		{\boldsymbol{\theta}}
+\def \bvartheta    		{\boldsymbol{\vartheta}}
+\def \bTheta       		{\boldsymbol{\Theta}}
+\def \biota        		{\boldsymbol{\iota}}
+\def \bkappa       		{\boldsymbol{\kappa}}
+\def \blambda      		{\boldsymbol{\lambda}}
+\def \bLambda      		{\boldsymbol{\Lambda}}
+\def \bmu          		{\boldsymbol{\mu}}
+\def \bnu          		{\boldsymbol{\nu}}
+\def \bxi          		{\boldsymbol{\xi}}
+\def \bXi          		{\boldsymbol{\Xi}}
+\def \bpi          		{\boldsymbol{\pi}}
+\def \bPi          		{\boldsymbol{\Pi}}
+\def \brho         		{\boldsymbol{\rho}}
+\def \bvarrho      		{\boldsymbol{\varrho}}
+\def \bsigma       		{\boldsymbol{\sigma}}
+\def \bSigma       		{\boldsymbol{\Sigma}}
+\def \btau         		{\boldsymbol{\tau}}
+\def \bupsilon     		{\boldsymbol{\upsilon}}
+\def \bUpsilon     		{\boldsymbol{\Upsilon}}
+\def \bphi        		{\boldsymbol{\phi}}
+\def \bvarphi      		{\boldsymbol{\varphi}}
+\def \bPhi         		{\boldsymbol{\Phi}}
+\def \bchi         		{\boldsymbol{\chi}}
+\def \bpsi         		{\boldsymbol{\psi}}
+\def \bPsi         		{\boldsymbol{\Psi}}
+\def \bomega       		{\boldsymbol{\omega}}
+\def \bOmega       		{\boldsymbol{\Omega}}
 
 % Mathbf lower case English alphabets
-\def \mba          {\mathbf{a}}
-\def \mbb          {\mathbf{b}}
-\def \mbc          {\mathbf{c}}
-\def \mbd          {\mathbf{d}}
-\def \mbe          {\mathbf{e}}
-\def \mbf          {\mathbf{f}}
-\def \mbg          {\mathbf{g}}
-\def \mbh          {\mathbf{h}}
-\def \mbi          {\mathbf{i}}
-\def \mbj          {\mathbf{j}}
-\def \mbk          {\mathbf{k}}
-\def \mbl          {\mathbf{l}}
-\def \mbm          {\mathbf{m}}
-\def \mbn          {\mathbf{n}}
-\def \mbo          {\mathbf{o}}
-\def \mbp          {\mathbf{p}}
-\def \mbq          {\mathbf{q}}
-\def \mbr          {\mathbf{r}}
-\def \mbs          {\mathbf{s}}
-\def \mbt          {\mathbf{t}}
-\def \mbu          {\mathbf{u}}
-\def \mbv          {\mathbf{v}}
-\def \mbw          {\mathbf{w}}
-\def \mbx          {\mathbf{x}}
-\def \mby          {\mathbf{y}}
-\def \mbz          {\mathbf{z}}
+\def \mba          		{\mathbf{a}}
+\def \mbb         	 	{\mathbf{b}}
+\def \mbc          		{\mathbf{c}}
+\def \mbd          		{\mathbf{d}}
+\def \mbe          		{\mathbf{e}}
+\def \mbf          		{\mathbf{f}}
+\def \mbg          		{\mathbf{g}}
+\def \mbh          		{\mathbf{h}}
+\def \mbi          		{\mathbf{i}}
+\def \mbj          		{\mathbf{j}}
+\def \mbk          		{\mathbf{k}}
+\def \mbl          		{\mathbf{l}}
+\def \mbm          		{\mathbf{m}}
+\def \mbn          		{\mathbf{n}}
+\def \mbo          		{\mathbf{o}}
+\def \mbp          		{\mathbf{p}}
+\def \mbq          		{\mathbf{q}}
+\def \mbr          		{\mathbf{r}}
+\def \mbs          		{\mathbf{s}}
+\def \mbt          		{\mathbf{t}}
+\def \mbu          		{\mathbf{u}}
+\def \mbv          		{\mathbf{v}}
+\def \mbw          		{\mathbf{w}}
+\def \mbx          		{\mathbf{x}}
+\def \mby          		{\mathbf{y}}
+\def \mbz          		{\mathbf{z}}
 
 % Mathbf upper case English alphabets
-\def \mbA          {\mathbf{A}}
-\def \mbB          {\mathbf{B}}
-\def \mbC          {\mathbf{C}}
-\def \mbD          {\mathbf{D}}
-\def \mbE          {\mathbf{E}}
-\def \mbF          {\mathbf{F}}
-\def \mbG          {\mathbf{G}}
-\def \mbH          {\mathbf{H}}
-\def \mbI          {\mathbf{I}}
-\def \mbJ          {\mathbf{J}}
-\def \mbK          {\mathbf{K}}
-\def \mbL          {\mathbf{L}}
-\def \mbM          {\mathbf{M}}
-\def \mbN          {\mathbf{N}}
-\def \mbO          {\mathbf{O}}
-\def \mbP          {\mathbf{P}}
-\def \mbQ          {\mathbf{Q}}
-\def \mbR          {\mathbf{R}}
-\def \mbS          {\mathbf{S}}
-\def \mbT          {\mathbf{T}}
-\def \mbU          {\mathbf{U}}
-\def \mbV          {\mathbf{V}}
-\def \mbW          {\mathbf{W}}
-\def \mbX          {\mathbf{X}}
-\def \mbY          {\mathbf{Y}}
-\def \mbZ          {\mathbf{Z}}
+\def \mbA          		{\mathbf{A}}
+\def \mbB          		{\mathbf{B}}
+\def \mbC          		{\mathbf{C}}
+\def \mbD          		{\mathbf{D}}
+\def \mbE          		{\mathbf{E}}
+\def \mbF          		{\mathbf{F}}
+\def \mbG          		{\mathbf{G}}
+\def \mbH          		{\mathbf{H}}
+\def \mbI          		{\mathbf{I}}
+\def \mbJ          		{\mathbf{J}}
+\def \mbK          		{\mathbf{K}}
+\def \mbL          		{\mathbf{L}}
+\def \mbM         	 	{\mathbf{M}}
+\def \mbN          		{\mathbf{N}}
+\def \mbO          		{\mathbf{O}}
+\def \mbP          		{\mathbf{P}}
+\def \mbQ          		{\mathbf{Q}}
+\def \mbR          		{\mathbf{R}}
+\def \mbS          		{\mathbf{S}}
+\def \mbT          		{\mathbf{T}}
+\def \mbU          		{\mathbf{U}}
+\def \mbV          		{\mathbf{V}}
+\def \mbW          		{\mathbf{W}}
+\def \mbX          		{\mathbf{X}}
+\def \mbY          		{\mathbf{Y}}
+\def \mbZ          		{\mathbf{Z}}
 
 % Caligraphy upper case English alphabets
-\def \calA         {\mathcal{A}}
-\def \calB         {\mathcal{B}}
-\def \calC         {\mathcal{C}}
-\def \calD         {\mathcal{D}}
-\def \calE         {\mathcal{E}}
-\def \calF         {\mathcal{F}}
-\def \calG         {\mathcal{G}}
-\def \calH         {\mathcal{H}}
-\def \calI         {\mathcal{I}}
-\def \calJ         {\mathcal{J}}
-\def \calK         {\mathcal{K}}
-\def \calL         {\mathcal{L}}
-\def \calM         {\mathcal{M}}
-\def \calN         {\mathcal{N}}
-\def \calO         {\mathcal{O}}
-\def \calP         {\mathcal{P}}
-\def \calQ         {\mathcal{Q}}
-\def \calR         {\mathcal{R}}
-\def \calS         {\mathcal{S}}
-\def \calT         {\mathcal{T}}
-\def \calU         {\mathcal{U}}
-\def \calV         {\mathcal{V}}
-\def \calW         {\mathcal{W}}
-\def \calX         {\mathcal{X}}
-\def \calY         {\mathcal{Y}}
-\def \calZ         {\mathcal{Z}}
+\def \calA         		{\mathcal{A}}
+\def \calB         		{\mathcal{B}}
+\def \calC         		{\mathcal{C}}
+\def \calD         		{\mathcal{D}}
+\def \calE         		{\mathcal{E}}
+\def \calF         		{\mathcal{F}}
+\def \calG         		{\mathcal{G}}
+\def \calH         		{\mathcal{H}}
+\def \calI         		{\mathcal{I}}
+\def \calJ         		{\mathcal{J}}
+\def \calK         		{\mathcal{K}}
+\def \calL         		{\mathcal{L}}
+\def \calM         		{\mathcal{M}}
+\def \calN         		{\mathcal{N}}
+\def \calO         		{\mathcal{O}}
+\def \calP         		{\mathcal{P}}
+\def \calQ         		{\mathcal{Q}}
+\def \calR         		{\mathcal{R}}
+\def \calS         		{\mathcal{S}}
+\def \calT         		{\mathcal{T}}
+\def \calU         		{\mathcal{U}}
+\def \calV         		{\mathcal{V}}
+\def \calW         		{\mathcal{W}}
+\def \calX         		{\mathcal{X}}
+\def \calY         		{\mathcal{Y}}
+\def \calZ         		{\mathcal{Z}}
 
 % Numbers
-\def \bzero        {\boldsymbol{0}}
-\def \bone         {\boldsymbol{1}}
+\def \bzero        		{\boldsymbol{0}}
+\def \bone         		{\boldsymbol{1}}
 
 % Sets
-\def \binaryB      {\mathds{B}}
-\def \complexC     {\mathds{C}}
-\def \expecE       {\mathds{E}}
-\def \naturalN     {\mathds{N}}
-\def \probP        {\mathds{P}}
-\def \rationalQ    {\mathds{Q}}
-\def \realR        {\mathds{R}}
-\def \realRp       {\mathds{R}_{+}}
-\def \realRn       {\mathds{R}_{-}}
-\def \integerZ     {\mathds{Z}}
+\def \binaryB#1    		{\mathds{B}^#1}
+\def \complexC#1   		{\mathds{C}^#1}
+\def \expecE#1     		{\mathds{E}^#1}
+\def \naturalN#1    	{\mathds{N}^#1}
+\def \probP#1       	{\mathds{P}^#1}
+\def \rationalQ#1   	{\mathds{Q}^#1}
+\def \realR#1       	{\mathds{R}}
+\def \realRp#1      	{\mathds{R}_{+}^#1}
+\def \realRn#1      	{\mathds{R}_{-}^#1}
+\def \integerZ#1    	{\mathds{Z}^#1}
 
 
 
 % matrix terms
-\def \tr           {\mathrm{tr}}
-\def \vec          {\mathrm{vec}}
-\def \diag         {\mathrm{diag}}
-\def \cdiag        {\mathrm{Diag}}
-\def \bdiag        {\mathbf{diag}}
-\def \cov          {\mathrm{cov}}
-\def \ccov         {\mathrm{Cov}}
-\def \bcov         {\mathbf{cov}}
+\def \tr#1        		{\mathrm{tr}(#1)}
+\def \vec#1          	{\mathrm{vec}(#1)}
+\def \diag#1         	{\mathrm{diag}(#1)}
+\def \Diag#1        	{\mathrm{Diag}(#1)}
+\def \bdiag#1        	{\mathbf{diag}(#1)}
+\def \cov#1          	{\mathrm{cov}(#1)}
+\def \Cov#1         	{\mathrm{Cov}(#1)}
+\def \bcov#1         	{\mathbf{cov}(#1)}
 
 % Misc
-\def \asin         {\sin^{-1}}
-\def \acos         {\cos^{-1}}
-\def \atan         {\tan^{-1}}
-\def \acsc         {\csc^{-1}}
-\def \asec         {\sec^{-1}}
-\def \acot         {\cot^{-1}}
-\def \implies      {\Rightarrow}
-\def \half         {\frac{1}{2}}
-\def \roothalf     {\frac{1}{\sqrt{2}}}
-\def \third        {\frac{1}{3}}
-\def \quarter      {\frac{1}{4}}
-\def \fourth       {\frac{1}{4}}
-\def \fifth        {\frac{1}{5}}
-\def \threequarter {\frac{3}{4}}
-\def \ejomg        {e^{j\omega}}
-\def \ejmomg       {e^{-j\omega}}
-\def \zinv         {z^{-1}}
-\def \st           {\mathrm{s.t.}}
-\def \ow           {\mathrm{otherwise}}
-\def \ew           {\mathrm{elsewhere}}
-\def \sgn          {\mathrm{sgn}}
-\def \sign         {\mathrm{sign}}
-\def \degree       {^\circ}
-\def \Oh           {\mathcal{O}}
-\def \oh           {o}
+\def \asin#1       		{\sin^{-1}(#1)}
+\def \acos#1       		{\cos^{-1}(#1)}
+\def \atan#1       		{\tan^{-1}(#1)}
+\def \acsc#1       		{\csc^{-1}(#1)}
+\def \asec#1       		{\sec^{-1}(#1)}
+\def \acot#1       		{\cot^{-1}(#1)}
+\def \implies      		{\Rightarrow}
+\def \half         		{\frac{1}{2}}
+\def \roothalf     		{\frac{1}{\sqrt{2}}}
+\def \third        		{\frac{1}{3}}
+\def \quarter      		{\frac{1}{4}}
+\def \fourth       		{\frac{1}{4}}
+\def \fifth        		{\frac{1}{5}}
+\def \threequarter 		{\frac{3}{4}}
+\def \ejomg        		{e^{j\omega}}
+\def \ejmomg       		{e^{-j\omega}}
+\def \zinv         		{z^{-1}}
+\def \st           		{~\mathrm{s.t.}~}
+\def \ow          		{~\mathrm{otherwise}~}
+\def \ew          		{~\mathrm{elsewhere}~}
+\def \sgn#1        		{\mathrm{sgn}(#1)}
+\def \sign#1       		{\mathrm{sign}(#1)}
+\def \degree     		{^\circ}
+\def \Oh#1         		{\mathcal{O}(#1)}
+\def \oh#1         		{o(#1)}
 
-% Text colors
-\def\blue#1{\textcolor{blue}{#1}}
-\def\red#1{\textcolor{red}{#1}}
-\def\green#1{\textcolor{green}{#1}}
+% Basic text colors
+\def\white#1			{\textcolor{white}{#1}}
+\def\blue#1				{\textcolor{blue}{#1}}
+\def\red#1				{\textcolor{red}{#1}}
+\def\green#1			{\textcolor{green}{#1}}
+\def\cyan#1				{\textcolor{cyan}{#1}}
+\def\magenta#1			{\textcolor{magenta}{#1}}
+\def\yellow#1			{\textcolor{yellow}{#1}}
+
+% Special colors that comes with dvipsnames option in xcolor package
+\def\Apricot#1    		{\textcolor{Apricot}{#1}}
+\def\Aquamarine#1 		{\textcolor{Aquamarine}{#1}}
+\def\Bittersweet#1		{\textcolor{Bittersweet}{#1}}
+\def\Black#1        	{\textcolor{Black}{#1}}
+\def\Blue#1				{\textcolor{Blue}{#1}}
+\def\BlueGreen#1		{\textcolor{BlueGreen}{#1}}
+\def\BlueViolet#1		{\textcolor{BlueViolet}{#1}}
+\def\BrickRed#1			{\textcolor{BrickRed}{#1}}
+\def\Brown#1			{\textcolor{Brown}{#1}}
+\def\BurntOrange#1		{\textcolor{BurntOrange}{#1}}
+\def\CadetBlue#1		{\textcolor{CadetBlue}{#1}}
+\def\CarnationPink#1	{\textcolor{CarnationPink}{#1}}
+\def\Cerulean#1			{\textcolor{Cerulean}{#1}}
+\def\CornflowerBlue#1	{\textcolor{CornflowerBlue}{#1}}
+\def\Cyan#1            	{\textcolor{Cyan}{#1}}
+\def\Dandelion#1      	{\textcolor{Dandelion}{#1}}
+\def\DarkOrchid#1     	{\textcolor{DarkOrchid}{#1}}
+\def\Emerald#1			{\textcolor{Emerald}{#1}}
+\def\ForestGreen#1		{\textcolor{ForestGreen}{#1}}
+\def\Fuchsia#1			{\textcolor{Fuchsia}{#1}}
+\def\Goldenrod#1		{\textcolor{Goldenrod}{#1}}
+\def\Gray#1				{\textcolor{Gray}{#1}}
+\def\Green#1			{\textcolor{Green}{#1}}
+\def\GreenYellow#1		{\textcolor{GreenYellow}{#1}}
+\def\JungleGreen#1		{\textcolor{JungleGreen}{#1}}
+\def\Lavender#1			{\textcolor{Lavender}{#1}}
+\def\LimeGreen#1		{\textcolor{LimeGreen}{#1}}
+\def\Magenta#1			{\textcolor{Magenta}{#1}}
+\def\Mahogany#1			{\textcolor{Mahogany}{#1}}
+\def\Maroon#1			{\textcolor{Maroon}{#1}}
+\def\Melon#1			{\textcolor{Melon}{#1}}
+\def\MidnightBlue#1		{\textcolor{MidnightBlue}{#1}}
+\def\Mulberry#1			{\textcolor{Mulberry}{#1}}
+\def\NavyBlue#1			{\textcolor{NavyBlue}{#1}}
+\def\OliveGreen#1		{\textcolor{OliveGreen}{#1}}
+\def\Orange#1			{\textcolor{Orange}{#1}}
+\def\OrangeRed#1		{\textcolor{OrangeRed}{#1}}
+\def\Orchid#1			{\textcolor{Orchid}{#1}}
+\def\Peach#1			{\textcolor{Peach}{#1}}
+\def\PeriWinkle#1		{\textcolor{Periwinkle}{#1}}
+\def\PineGreen#1		{\textcolor{PineGreen}{#1}}
+\def\Plum#1				{\textcolor{Plum}{#1}}
+\def\ProcessBlue#1		{\textcolor{ProcessBlue}{#1}}
+\def\Purple#1			{\textcolor{Purple}{#1}}
+\def\RawsSienna#1		{\textcolor{RawSienna}{#1}}
+\def\Red#1				{\textcolor{Red}{#1}}
+\def\RedOrange#1		{\textcolor{RedOrange}{#1}}
+\def\RedViolet#1		{\textcolor{RedViolet}{#1}}
+\def\Rhodamine#1		{\textcolor{Rhodamine}{#1}}
+\def\RoyalBlue#1		{\textcolor{RoyalBlue}{#1}}
+\def\Royalpurple#1		{\textcolor{RoyalPurple}{#1}}
+\def\RubineRed#1		{\textcolor{RubineRed}{#1}}
+\def\Salmon#1			{\textcolor{Salmon}{#1}}
+\def\SeaGreen#1			{\textcolor{SeaGreen}{#1}}
+\def\Sepia#1			{\textcolor{Sepia}{#1}}
+\def\YellowOrange#1		{\textcolor{YellowOrange}{#1}}
+\def\SkyBlue#1			{\textcolor{SkyBlue}{#1}}
+\def\SpringGreen#1		{\textcolor{SpringGreen}{#1}}
+\def\Tan#1				{\textcolor{Tan}{#1}}
+\def\TealBlue#1			{\textcolor{TealBlue}{#1}}
+\def\Thistle#1			{\textcolor{Thistle}{#1}}
+\def\Turquoise#1		{\textcolor{Turquoise}{#1}}
+\def\Violet#1			{\textcolor{Violet}{#1}}
+\def\VioletRed#1		{\textcolor{VioletRed}{#1}}
+\def\White#1			{\textcolor{White}{#1}}
+\def\WildStrawberry#1	{\textcolor{WildStrawberry}{#1}}
+\def\Yellow#1			{\textcolor{Yellow}{#1}}
+\def\Yellowgreen#1		{\textcolor{YellowGreen}{#1}}
+
 
 % Theorem-like environments (defs, lemmas numbered like Theorems)
-\newtheorem{Theorem}{Theorem}%[section]
-\newtheorem{Definition}{Definition}%[section]
+\newtheorem{Theorem}  	{Theorem}%[section]
+\newtheorem{Definition}	{Definition}%[section]
 \newtheorem{Proposition}{Proposition}%[section]
-\newtheorem{Lemma}{Lemma}%[section]
-\newtheorem{Corollary}{Corollary}%[section]
-\newtheorem{Example}{Example}%[section]
-
-% to label, reference them
-\newcommand{\ThmRef}[1]    {\ref{thm:#1}}
-\newcommand{\ThmLabel}[1]  {\label{thm:#1}}
-\newcommand{\DefRef}[1]    {\ref{def:#1}}
-\newcommand{\DefLabel}[1]  {\label{def:#1}}
-\newcommand{\PrpRef}[1]    {\ref{prp:#1}}
-\newcommand{\PrpLabel}[1]  {\label{prp:#1}}
-\newcommand{\LemRef}[1]    {\ref{lem:#1}}
-\newcommand{\LemLabel}[1]  {\label{lem:#1}}
-\newcommand{\CorRef}[1]    {\ref{cor:#1}}
-\newcommand{\CorLabel}[1]  {\label{cor:#1}}
-\newcommand{\ExmRef}[1]    {\ref{exm:#1}}
-\newcommand{\ExmLabel}[1]  {\label{exm:#1}}
+\newtheorem{Lemma}		{Lemma}%[section]
+\newtheorem{Corollary}	{Corollary}%[section]
+\newtheorem{Example}	{Example}%[section]
 
 % algorithms
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
