@@ -1,15 +1,34 @@
-# Latex symbols template
+# Latex symbols template (2.0.01)
 Short symbol commands for <img src="https://latex.codecogs.com/gif.latex?\LaTeX" title="\LaTeX" />
 
-usage: 
+### Installation and usage:
 1. Download the `symbols.tex` file and put is in the same folder as that of the main `.tex` file.
-2. Add `\input{symbols}` after all `\usepackage{}` headers in the main `.tex` file.
+2. Add `\input{symbols.tex}` after all `\usepackage{}` headers in the main `.tex` file.
 
-Required packages: 
+
+### Required packages (included):
 1. `dsfont`
-2. `algpseudocode`
+2. `algpseudocode` 
+3. `xcolor`
 
-### Lower case bold English alphabets
+
+### Environments available:
+1. `Theorem`
+2. `Definition`
+3. `Proposition`
+4. `Lemma`
+5. `Corollary`
+6. `Example`
+
+
+### Extras in algorithms:
+If you use `algorithmic` inside `algorithm` environment, 
+1. using `\Require` will result into `Input:`
+2. using `\Ensure` will result into `Initialize:`
+
+
+### Table of usage:
+#### Lower case bold English alphabets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | `\ba` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{a}" /> | `\bb` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{b}" /> | `\bc` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{c}" /> | `\bd` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{d}" /> |
@@ -20,7 +39,8 @@ Required packages:
 | `\bu` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{u}" /> | `\bv` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{v}" /> | `\bw` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{w}" /> | `\bx` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{x}" /> |
 | `\by` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{y}" /> | `\bz` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{z}" /> |
 
-### Upper case bold English alphabets
+
+#### Upper case bold English alphabets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | `\bA` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{A}" /> | `\bB` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{B}" /> | `\bC` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{C}" /> | `\bD` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{D}" /> |
@@ -31,7 +51,8 @@ Required packages:
 | `\bU` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{U}" /> | `\bV` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{V}" /> | `\bW` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{W}" /> | `\bX` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{X}" /> |
 | `\bY` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{Y}" /> | `\bZ` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{Z}" /> |
 
-### Bold Greek alphabets
+
+#### Bold Greek alphabets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | `\balpha` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\alpha}" /> | `\bbeta` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\beta}" /> | `\bgamma` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\gamma}" /> | `\bGamma` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Gamma}" /> |
@@ -45,7 +66,8 @@ Required packages:
 | `\bPhi` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Phi}" /> | `\bchi` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\chi}" /> | `\bpsi` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\psi}" /> | `\bPsi` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Psi}" /> |
 | `\bomega` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\omega}" /> | `\bOmega` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{\Omega}" /> |
 
-### Mathbf lower case English alphabets
+
+#### Mathbf lower case English alphabets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | `\mba` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{a}" /> | `\mbb` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{b}" /> | `\mbc` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{c}" /> | `\mbd` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{d}" /> |
@@ -56,7 +78,8 @@ Required packages:
 | `\mbu` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{u}" /> | `\mbv` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{v}" /> | `\mbw` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{w}" /> | `\mbx` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{x}" /> |
 | `\mby` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{y}" /> | `\mbz` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{z}" /> |
 
-### Mathbf upper case English alphabets
+
+#### Mathbf upper case English alphabets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | `\mbA` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{A}" /> | `\mbB` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{B}" /> | `\mbC` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{C}" /> | `\mbD` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{D}" /> |
@@ -67,7 +90,8 @@ Required packages:
 | `\mbU` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{U}" /> | `\mbV` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{V}" /> | `\mbW` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{W}" /> | `\mbX` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{X}" /> |
 | `\mbY` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{Y}" /> | `\mbZ` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{Z}" /> |
 
-### Caligraphy upper case English alphabets
+
+#### Caligraphy upper case English alphabets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
 | `\calA` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{A}" /> | `\calB` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{B}" /> | `\calC` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{C}" /> | `\calD` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{D}" /> |
@@ -78,36 +102,71 @@ Required packages:
 | `\calU` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{U}" /> | `\calV` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{V}" /> | `\calW` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{W}" /> | `\calX` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{X}" /> |
 | `\calY` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{Y}" /> | `\calZ` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{Z}" /> |
 
-### Numbers
+
+#### Numbers
 | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- |
 | `\bzero` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{0}" /> | `\bone` | <img src="https://latex.codecogs.com/gif.latex?\boldsymbol{1}" /> |
 
-### Sets
-| Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
-| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| `\binaryB` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{B}" /> | `\complexC` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{C}" /> | `\expecE` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{E}" /> | `\naturalN` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{N}" /> |
-| `\probP` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{P}" /> | `\rationalQ` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{Q}" /> | `\realR` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}" /> | `\realRp` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}_{+}" /> |
-| `\realRn` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}_{-}" /> | `\integerZ` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{Z}" /> |
 
-### Matrix terms
+#### Sets
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| `\tr` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{tr}" /> | `\vec` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{vec}" /> | `\diag` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{diag}" /> | `\cdiag` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{Diag}" /> |
-| `\bdiag` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{diag}" /> | `\cov` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{cov}" /> | `\ccov` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{Cov}" /> | `\bcov` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{cov}" /> |
+| `\binaryB{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{B}^N" /> | `\complexC{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{C}^N" /> | `\expecE{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{E}^N" /> | `\naturalN{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{N}^N" /> |
+| `\probP{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{P}^N" /> | `\rationalQ{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{Q}^N" /> | `\realR{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}^N" /> | `\realRp{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}_{+}^N" /> |
+| `\realRn{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}_{-}^N" /> | `\integerZ{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{Z}^N" /> |
 
-### Misc.
+
+#### Matrix terms
 | Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| `\asin` | <img src="https://latex.codecogs.com/gif.latex?\sin^{-1}" /> | `\acos` | <img src="https://latex.codecogs.com/gif.latex?\cos^{-1}" /> | `\atan` | <img src="https://latex.codecogs.com/gif.latex?\tan^{-1}" /> | `\acsc` | <img src="https://latex.codecogs.com/gif.latex?\csc^{-1}" /> |
-| `\asec` | <img src="https://latex.codecogs.com/gif.latex?\sec^{-1}" /> | `\acot` | <img src="https://latex.codecogs.com/gif.latex?\cot^{-1}" /> | `\implies` | <img src="https://latex.codecogs.com/gif.latex?\Rightarrow" /> | `\half` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{2}" /> |
+| `\tr{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{tr}(X)" /> | `\vec{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{vec}(X)" /> | `\diag{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{diag}(X)" /> | `\Diag{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{Diag}(x)" /> |
+| `\bdiag{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{diag}(X)" /> | `\cov{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{cov}(x)" /> | `\Cov{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{Cov}(x)" /> | `\bcov{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{cov}(x)" /> |
+
+
+#### Misc.
+| Syntax | Description | Syntax | Description | Syntax | Description | Syntax | Description |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| `\asin{x}` | <img src="https://latex.codecogs.com/gif.latex?\sin^{-1}(x)" /> | `\acos{x}` | <img src="https://latex.codecogs.com/gif.latex?\cos^{-1}(x)" /> | `\atan{x}` | <img src="https://latex.codecogs.com/gif.latex?\tan^{-1}(x)" /> | `\acsc{x}` | <img src="https://latex.codecogs.com/gif.latex?\csc^{-1}(x)" /> |
+| `\asec{x}` | <img src="https://latex.codecogs.com/gif.latex?\sec^{-1}(x)" /> | `\acot{x}` | <img src="https://latex.codecogs.com/gif.latex?\cot^{-1}(x)" /> | `\implies` | <img src="https://latex.codecogs.com/gif.latex?\Rightarrow" /> | `\half` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{2}" /> |
 | `\roothalf` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{\sqrt{2}}" /> | `\third` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{3}" /> | `\quarter` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{4}" /> | `\fourth` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{4}" /> |
 | `\fifth` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{5}" /> | `\threequarter` | <img src="https://latex.codecogs.com/gif.latex?\frac{3}{4}" /> | `\ejomg` | <img src="https://latex.codecogs.com/gif.latex?e^{j\omega}" /> | `\ejmomg` | <img src="https://latex.codecogs.com/gif.latex?e^{-j\omega}" /> |
 | `\zinv` | <img src="https://latex.codecogs.com/gif.latex?z^{-1}" /> | `\st` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{s.t.}" /> | `\ow` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{otherwise}" /> | `\ew` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{elsewhere}" /> |
-| `\sgn` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{sgn}" /> | `\sign` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{sign}" /> | `X \degree` | <img src="https://latex.codecogs.com/gif.latex?X^\circ" /> | `\Oh` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{O}" /> |
-| `\oh` | <img src="https://latex.codecogs.com/gif.latex?o" /> |
+| `\sgn{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{sgn}(x)" /> | `\sign{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{sign}(x)" /> | `X\degree` | <img src="https://latex.codecogs.com/gif.latex?X^\circ" /> | `\Oh{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{O}(N)" /> |
+| `\oh{N}` | <img src="https://latex.codecogs.com/gif.latex?o(N)" /> |
 
-### Text colors
+
+#### Basic text colors
 | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| `\blue{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{blue}\text{text}" /> | `\red{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{red}\text{text}" /> | `\green{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{green}\text{text}" /> |
+| `\white{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{white}\text{text}" /> | `\black{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{black}\text{text}" /> | `\red{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{red}\text{text}" /> |
+| `\green{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{green}\text{text}" /> | `\blue{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{blue}\text{text}" /> | `\cyan{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{cyan}\text{text}" /> | 
+| `\magenta{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{magenta}\text{text}" /> | `\yellow{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{yellow}\text{text}" /> |
+
+
+#### Special colors that comes with [dvipsnames] option in xcolor package (included)
+| Syntax | Description | Syntax | Description | Syntax | Description |
+| ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
+| `\Apricot{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Apricot}\text{text}" /> | `\Aquamarine{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Aquamarine}\text{text}" /> | `\Bittersweet{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Bittersweet}\text{text}" /> |
+| `\Black{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Black}\text{text}" /> | `\Blue{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Blue}\text{text}" /> | `\BlueGreen{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{BlueGreen}\text{text}" /> | 
+| `\BlueViolet{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{BlueViolet}\text{text}" /> |`\BrickRed{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{BrickRed}\text{text}" /> | `\Brown{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Brown}\text{text}" /> | 
+| `\BurntOrange{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{BurntOrange}\text{text}" /> | `\CadetBlue{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{CadetBlue}\text{text}" /> |`\CarnationPink{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{CarnationPink}\text{text}" /> |
+| `\Cerulean{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Cerulean}\text{text}" /> | `\CornflowerBlue{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{CornflowerBlue}\text{text}" /> | `\Cyan{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Cyan}\text{text}" /> |
+| `\Dandelion{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Dandelion}\text{text}" /> | `\DarkOrchid{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{DarkOrchid}\text{text}" /> | `\Emerald{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Emerald}\text{text}" /> | 
+| `\ForestGreen{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{ForestGreen}\text{text}" /> |`\Fuchsia{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Fuchsia}\text{text}" /> | `\Goldenrod{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Goldenrod}\text{text}" /> | 
+| `\Gray{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Gray}\text{text}" /> | `\Green{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Green}\text{text}" /> |`\GreenYellow{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{GreenYellow}\text{text}" /> |
+| `\JungleGreen{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{JungleGreen}\text{text}" /> | `\Lavender{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Lavender}\text{text}" /> | `\LimeGreen{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{LimeGreen}\text{text}" /> |
+| `\Magenta{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Magenta}\text{text}" /> | `\Mahogany{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Mahogany}\text{text}" /> | `\Maroon{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Maroon}\text{text}" /> |
+| `\Melon{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Melon}\text{text}" /> |`\MidnightBlue{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{MidnightBlue}\text{text}" /> | `\Mulberry{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Mulberry}\text{text}" /> | 
+| `\NavyBlue{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{NavyBlue}\text{text}" /> | `\OliveGreen{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{OliveGreen}\text{text}" /> |`\Orange{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Orange}\text{text}" /> |
+| `\OrangeRed{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{OrangeRed}\text{text}" /> | `\Orchid{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Orchid}\text{text}" /> | `\Peach{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Peach}\text{text}" /> |
+| `\Periwinkle{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Periwinkle}\text{text}" /> | `\PineGreen{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{PineGreen}\text{text}" /> | `\Plum{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Plum}\text{text}" /> | 
+| `\ProcessBlue{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{ProcessBlue}\text{text}" /> |`\Purple{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Purple}\text{text}" /> | `\RawSienna{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{RawSienna}\text{text}" /> | 
+| `\Red{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Red}\text{text}" /> | `\RedOrange{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{RedOrange}\text{text}" /> |`\RedViolet{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{RedViolet}\text{text}" /> |
+| `\Rhodamine{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Rhodamine}\text{text}" /> | `\RoyalBlue{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{RoyalBlue}\text{text}" /> | `\RoyalPurple{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{RoyalPurple}\text{text}" /> |
+| `\RubineRed{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{RubineRed}\text{text}" /> | `\Salmon{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Salmon}\text{text}" /> | `\SeaGreen{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{SeaGreen}\text{text}" /> | 
+| `\Sepia{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Sepia}\text{text}" /> |`\SkyBlue{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{SkyBlue}\text{text}" /> | `\SpringGreen{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{SpringGreen}\text{text}" /> | 
+| `\Tan{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Tan}\text{text}" /> | `\TealBlue{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{TealBlue}\text{text}" /> |`\Thistle{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Thistle}\text{text}" /> |
+| `\Turquoise{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Turquoise}\text{text}" /> | `\Violet{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Violet}\text{text}" /> | `\VioletRed{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{VioletRed}\text{text}" /> |
+| `\White{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{White}\text{text}" /> | `\WildStrawberry{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{WildStrawberry}\text{text}" /> | `\Yellow{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{Yellow}\text{text}" /> | 
+| `\YellowGreen{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{YellowGreen}\text{text}" /> |`\YellowOrange{text}` | <img src="https://latex.codecogs.com/gif.latex?\color{YellowOrange}\text{text}" /> |
