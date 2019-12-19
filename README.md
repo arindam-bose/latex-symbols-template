@@ -1,18 +1,20 @@
-# Latex symbols template (2.0.01)
+# Latex symbols template (2.0.02)
 Short symbol commands for <img src="https://latex.codecogs.com/gif.latex?\LaTeX" title="\LaTeX" />
 
 ### Installation and usage:
 1. Download the `symbols.tex` file and put is in the same folder as that of the main `.tex` file.
 2. Add `\input{symbols.tex}` after all `\usepackage{}` headers in the main `.tex` file.
+3. Refer to `test.tex` and `test.pdf` for further help.
 
 
 ### Required packages (included):
-1. `dsfont`
-2. `algpseudocode` 
-3. `xcolor`
+1. `amsmath`
+2. `dsfont`
+3. `algpseudocode` 
+4. `xcolor`
 
 
-### Environments available:
+### Available environments:
 1. `Theorem`
 2. `Definition`
 3. `Proposition`
@@ -130,7 +132,7 @@ If you use `algorithmic` inside `algorithm` environment,
 | `\asin{x}` | <img src="https://latex.codecogs.com/gif.latex?\sin^{-1}(x)" /> | `\acos{x}` | <img src="https://latex.codecogs.com/gif.latex?\cos^{-1}(x)" /> | `\atan{x}` | <img src="https://latex.codecogs.com/gif.latex?\tan^{-1}(x)" /> | `\acsc{x}` | <img src="https://latex.codecogs.com/gif.latex?\csc^{-1}(x)" /> |
 | `\asec{x}` | <img src="https://latex.codecogs.com/gif.latex?\sec^{-1}(x)" /> | `\acot{x}` | <img src="https://latex.codecogs.com/gif.latex?\cot^{-1}(x)" /> | `\implies` | <img src="https://latex.codecogs.com/gif.latex?\Rightarrow" /> | `\half` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{2}" /> |
 | `\roothalf` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{\sqrt{2}}" /> | `\third` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{3}" /> | `\quarter` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{4}" /> | `\fourth` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{4}" /> |
-| `\fifth` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{5}" /> | `\threequarter` | <img src="https://latex.codecogs.com/gif.latex?\frac{3}{4}" /> | `\ejomg` | <img src="https://latex.codecogs.com/gif.latex?e^{j\omega}" /> | `\ejmomg` | <img src="https://latex.codecogs.com/gif.latex?e^{-j\omega}" /> |
+| `\fifth` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{5}" /> | `\threequarter` | <img src="https://latex.codecogs.com/gif.latex?\frac{3}{4}" /> | `\ejomg` | <img src="https://latex.codecogs.com/gif.latex?e^{j\omega}" /> | `\ejnomg` | <img src="https://latex.codecogs.com/gif.latex?e^{-j\omega}" /> |
 | `\zinv` | <img src="https://latex.codecogs.com/gif.latex?z^{-1}" /> | `\st` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{s.t.}" /> | `\ow` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{otherwise}" /> | `\ew` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{elsewhere}" /> |
 | `\sgn{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{sgn}(x)" /> | `\sign{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{sign}(x)" /> | `X\degree` | <img src="https://latex.codecogs.com/gif.latex?X^\circ" /> | `\Oh{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{O}(N)" /> |
 | `\oh{N}` | <img src="https://latex.codecogs.com/gif.latex?o(N)" /> |
