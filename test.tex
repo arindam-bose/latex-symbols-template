@@ -1,0 +1,365 @@
+\documentclass{article}
+\usepackage{float}
+\usepackage[margin=0.8in]{geometry}
+\usepackage{algorithm, listings, lipsum}
+\newcommand{\mylipsum}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus sem nibh, et venenatis mauris aliquet et. Sed velit nisl.}
+
+\input{symbols.tex}
+\title{\Huge{\textbf{Latex Symbols Template}} \\\vspace{10pt} \Large{Short symbol commands for \LaTeX} \\ \vspace{10pt} version: 2.0.01 \vspace{20pt}}
+\author{Arindam Bose}
+ 
+\begin{document}
+	\maketitle
+	
+	\newpage
+	\section*{Installation and usage:}
+	\begin{enumerate}
+		\item Download the \texttt{symbols.tex} file and put is in the same folder as that of the main \texttt{.tex} file.
+		\item Add \verb|\input{symbols.tex}| after all \verb|\usepackage{}| headers in the main \texttt{.tex} file.
+		\item Refer to \texttt{test.tex} and \texttt{test.pdf} for further help.
+	\end{enumerate}
+	
+	\section*{Required packages (included):}
+	\begin{enumerate}
+		\item \texttt{amsmath}
+		\item \texttt{dsfont}
+		\item \texttt{algpseudocode}
+		\item \texttt{xcolor}
+	\end{enumerate}
+	
+	\section*{Available environments:}
+	\begin{enumerate}
+		\item \texttt{Theorem}
+		\item \texttt{Definition}
+		\item \texttt{Proposition}
+		\item \texttt{Lemma}
+		\item \texttt{Corollary}
+		\item \texttt{Example}
+	\end{enumerate}
+	See Section \{Theorem-like environments\} below for usage information.
+	
+	\section*{Extras in algorithms:}
+	If you use \texttt{algorithmic} inside \texttt{algorithm} environment,
+	\begin{enumerate}
+		\item using \verb|\Require| will result into \texttt{Input:},
+		\item using \verb|\Ensure| will result into \texttt{Initialize:}.
+	\end{enumerate}
+	See Section \{Algorithm\} below for usage information.
+	
+	\section*{Table of usage:}
+	\subsection*{Lower case bold English alphabets}
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|l|l|l|l|}
+			\hline
+			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description \\
+			\hline
+			\verb|\ba|	&	$\ba$	&	\verb|\bb|	&	$\bb$	&	\verb|\bc|	&	$\bc$	&	\verb|\bd|	&	$\bd$ \\
+			\verb|\be|	&	$\be$	&	\verb|\bdf|	&	$\bdf$	&	\verb|\bg|	&	$\bg$	&	\verb|\bh|	&	$\bh$ \\
+			\verb|\bi|	&	$\bi$	&	\verb|\bj|	&	$\bj$	&	\verb|\bk|	&	$\bk$	&	\verb|\bl|	&	$\bl$ \\
+			\verb|\bm|	&	$\bm$	&	\verb|\bn|	&	$\bn$	&	\verb|\bo|	&	$\bo$	&	\verb|\bp|	&	$\bp$ \\
+			\verb|\bq|	&	$\bq$	&	\verb|\br|	&	$\br$	&	\verb|\bs|	&	$\bs$	&	\verb|\bt|	&	$\bt$ \\
+			\verb|\bu|	&	$\bu$	&	\verb|\bv|	&	$\bv$	&	\verb|\bw|	&	$\bw$	&	\verb|\bx|	&	$\bx$ \\
+			\verb|\by|	&	$\by$	&	\verb|\bz|	&	$\bz$	&		&		&		&	 \\
+			\hline	
+		\end{tabular}
+	\end{table}
+
+	\subsection*{Upper case bold English alphabets}
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|l|l|l|l|}
+			\hline
+			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description \\
+			\hline
+			\verb|\bA|	&	$\bA$	&	\verb|\bB|	&	$\bB$	&	\verb|\bC|	&	$\bC$	&	\verb|\bD|	&	$\bD$ \\
+			\verb|\bE|	&	$\bE$	&	\verb|\bF|	&	$\bF$	&	\verb|\bG|	&	$\bG$	&	\verb|\bH|	&	$\bH$ \\
+			\verb|\bI|	&	$\bI$	&	\verb|\bJ|	&	$\bJ$	&	\verb|\bK|	&	$\bK$	&	\verb|\bL|	&	$\bL$ \\
+			\verb|\bM|	&	$\bM$	&	\verb|\bN|	&	$\bN$	&	\verb|\bO|	&	$\bO$	&	\verb|\bP|	&	$\bP$ \\
+			\verb|\bQ|	&	$\bQ$	&	\verb|\bR|	&	$\bR$	&	\verb|\bS|	&	$\bS$	&	\verb|\bT|	&	$\bT$ \\
+			\verb|\bU|	&	$\bU$	&	\verb|\bV|	&	$\bV$	&	\verb|\bW|	&	$\bW$	&	\verb|\bX|	&	$\bX$ \\
+			\verb|\bY|	&	$\bY$	&	\verb|\bZ|	&	$\bZ$	&		&		&		&	 \\
+			\hline	
+		\end{tabular}
+	\end{table}
+
+	\subsection*{Bold Greek alphabets}
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|l|l|l|l|}
+			\hline
+			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description \\
+			\hline
+			\verb|\balpha|	&	$\balpha$	&	\verb|\bbeta|	&	$\bbeta$	&	\verb|\bgamma|	&	$\bgamma$\\
+			\verb|\bGamma|	&	$\bGamma$	&	\verb|\bdelta|	&	$\bdelta$	&	\verb|\bDelta|	&	$\bDelta$\\
+			\verb|\bepsilon|	&	$\bepsilon$	&	\verb|\bvarepsilon|	&	$\bvarepsilon$	&	\verb|\bzeta|	&	$\bzeta$\\
+			\verb|\bdeta|	&	$\bdeta$	&	\verb|\btheta|	&	$\btheta$	&	\verb|\bvartheta|	&	$\bvartheta$\\
+			\verb|\bTheta|	&	$\bTheta$	&	\verb|\biota|	&	$\biota$	&	\verb|\bkappa|	&	$\bkappa$\\			
+			\verb|\blambda|	&	$\blambda$	&	\verb|\bLambda|	&	$\bLambda$	&	\verb|\bmu|	&	$\bmu$\\			
+			\verb|\bnu|	&	$\bnu$	&	\verb|\bxi|	&	$\bxi$	&	\verb|\bXi|	&	$\bXi$\\			
+			\verb|\bpi|	&	$\bpi$	&	\verb|\bPi|	&	$\bPi$	&	\verb|\brho|	&	$\brho$\\			
+			\verb|\bvarrho|	&	$\bvarrho$	&	\verb|\bsigma|	&	$\bsigma$	&	\verb|\bSigma|	&	$\bSigma$\\			
+			\verb|\btau|	&	$\btau$	&	\verb|\bupsilon|	&	$\bupsilon$	&	\verb|\bUpsilon|	&	$\bUpsilon$\\			
+			\verb|\bphi|	&	$\bphi$	&	\verb|\bvarphi|	&	$\bvarphi$	&	\verb|\bPhi|	&	$\bPhi$\\			
+			\verb|\bchi|	&	$\bchi$	&	\verb|\bpsi|	&	$\bpsi$	&	\verb|\bPsi|	&	$\bPsi$\\			
+			\verb|\bomega|	&	$\bomega$	&	\verb|\bOmega|	&	$\bOmega$	&		&	\\
+			\hline	
+		\end{tabular}
+	\end{table}
+
+	\subsection*{Mathbf lower case English alphabets}
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|l|l|l|l|}
+			\hline
+			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description \\
+			\hline
+			\verb|\mba|	&	$\mba$	&	\verb|\mbb|	&	$\mbb$	&	\verb|\mbc|	&	$\mbc$	&	\verb|\mbd|	&	$\mbd$ \\
+			\verb|\mbe|	&	$\mbe$	&	\verb|\mbf|	&	$\mbf$	&	\verb|\mbg|	&	$\mbg$	&	\verb|\mbh|	&	$\mbh$ \\
+			\verb|\mbi|	&	$\mbi$	&	\verb|\mbj|	&	$\mbj$	&	\verb|\mbk|	&	$\mbk$	&	\verb|\mbl|	&	$\mbl$ \\
+			\verb|\mbm|	&	$\mbm$	&	\verb|\mbn|	&	$\mbn$	&	\verb|\mbo|	&	$\mbo$	&	\verb|\mbp|	&	$\mbp$ \\
+			\verb|\mbq|	&	$\mbq$	&	\verb|\mbr|	&	$\mbr$	&	\verb|\mbs|	&	$\mbs$	&	\verb|\mbt|	&	$\mbt$ \\
+			\verb|\mbu|	&	$\mbu$	&	\verb|\mbv|	&	$\mbv$	&	\verb|\mbw|	&	$\mbw$	&	\verb|\mbx|	&	$\mbx$ \\
+			\verb|\mby|	&	$\mby$	&	\verb|\mbz|	&	$\mbz$	&		&		&		&	 \\
+			\hline	
+		\end{tabular}
+	\end{table}
+	
+	\subsection*{Mathbf upper case English alphabets}
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|l|l|l|l|}
+			\hline
+			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description \\
+			\hline
+			\verb|\mbA|	&	$\mbA$	&	\verb|\mbB|	&	$\mbB$	&	\verb|\mbC|	&	$\mbC$	&	\verb|\mbD|	&	$\mbD$ \\
+			\verb|\mbE|	&	$\mbE$	&	\verb|\mbF|	&	$\mbF$	&	\verb|\mbG|	&	$\mbG$	&	\verb|\mbH|	&	$\mbH$ \\
+			\verb|\mbI|	&	$\mbI$	&	\verb|\mbJ|	&	$\mbJ$	&	\verb|\mbK|	&	$\mbK$	&	\verb|\mbL|	&	$\mbL$ \\
+			\verb|\mbM|	&	$\mbM$	&	\verb|\mbN|	&	$\mbN$	&	\verb|\mbO|	&	$\mbO$	&	\verb|\mbP|	&	$\mbP$ \\
+			\verb|\mbQ|	&	$\mbQ$	&	\verb|\mbR|	&	$\mbR$	&	\verb|\mbS|	&	$\mbS$	&	\verb|\mbT|	&	$\mbT$ \\
+			\verb|\mbU|	&	$\mbU$	&	\verb|\mbV|	&	$\mbV$	&	\verb|\mbW|	&	$\mbW$	&	\verb|\mbX|	&	$\mbX$ \\
+			\verb|\mbY|	&	$\mbY$	&	\verb|\mbZ|	&	$\mbZ$	&		&		&		&	 \\
+			\hline	
+		\end{tabular}
+	\end{table}
+
+	\subsection*{Caligraphy upper case English alphabets}
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|l|l|l|l|}
+			\hline
+			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description \\
+			\hline
+			\verb|\calA|	&	$\calA$	&	\verb|\calB|	&	$\calB$	&	\verb|\calC|	&	$\calC$	&	\verb|\calD|	&	$\calD$ \\
+			\verb|\calE|	&	$\calE$	&	\verb|\calF|	&	$\calF$	&	\verb|\calG|	&	$\calG$	&	\verb|\calH|	&	$\calH$ \\
+			\verb|\calI|	&	$\calI$	&	\verb|\calJ|	&	$\calJ$	&	\verb|\calK|	&	$\calK$	&	\verb|\calL|	&	$\calL$ \\
+			\verb|\calM|	&	$\calM$	&	\verb|\calN|	&	$\calN$	&	\verb|\calO|	&	$\calO$	&	\verb|\calP|	&	$\calP$ \\
+			\verb|\calQ|	&	$\calQ$	&	\verb|\calR|	&	$\calR$	&	\verb|\calS|	&	$\calS$	&	\verb|\calT|	&	$\calT$ \\
+			\verb|\calU|	&	$\calU$	&	\verb|\calV|	&	$\calV$	&	\verb|\calW|	&	$\calW$	&	\verb|\calX|	&	$\calX$ \\
+			\verb|\calY|	&	$\calY$	&	\verb|\calZ|	&	$\calZ$	&		&		&		&	 \\
+			\hline	
+		\end{tabular}
+	\end{table}
+
+	\subsection*{Numbers}
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|}
+			\hline
+			Syntax	&	Description	&	Syntax	&	Description \\
+			\hline
+			\verb|\bzero|	&	$\bzero$	&	\verb|\bone|	&	$\bone$ \\
+			\hline	
+		\end{tabular}
+	\end{table}
+
+	\subsection*{Sets and notations}
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|l|l|l|l|}
+			\hline
+			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description \\
+			\hline
+			\verb|\binaryB{N}|	&	$\binaryB{N}$	&	\verb|\complexC{N}|	&	$\complexC{N}$	&	\verb|\expecE{\bx}|	&	$\expecE{\bx}$\\
+			\verb|\naturalN{N}|	&	$\naturalN{N}$	&	\verb|\probP{\bx}|	&	$\probP{\bx}$	&	\verb|\rationalQ{N}|	&	$\rationalQ{N}$\\
+			\verb|\realR{N}|	&	$\realR{N}$	&	\verb|\realRp{N}|	&	$\realRp{N}$	&	\verb|\realRn{N}|	&	$\realRn{N}$\\
+			\verb|\integerZ{N}|	&	$\integerZ{N}$	&		&		&		&	\\
+			\hline	
+		\end{tabular}
+	\end{table}
+
+	\subsection*{Matrix terms}
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|l|l|}
+			\hline
+			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description	 \\
+			\hline
+			\verb|\tr{X}|	&	$\tr{X}$	&	\verb|\vec{X}|	&	$\vec{X}$	&	\verb|\diag{X}|	&	$\diag{X}$ \\
+			\verb|\Diag{\bx}|	&	$\Diag{\bx}$	&	\verb|\bdiag{X}|	&	$\bdiag{X}$	&	\verb|\cov{\bx}|	&	$\cov{\bx}$ \\
+			\verb|\Cov{X}|	&	$\Cov{X}$	&	\verb|\bcov{\bx}|	&	$\bcov{\bx}$ &	&	\\
+			\hline	
+		\end{tabular}
+	\end{table}
+
+	\subsection*{Misc.}
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|l|l|}
+			\hline
+			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description	 \\
+			\hline
+			\verb|\asin{x}|	&	$\asin{x}$	&	\verb|\acos{x}|	&	$\acos{x}$	&	\verb|\atan{x}|	&	$\atan{x}$ \\	
+			\verb|\acsc{x}|	&	$\acsc{x}$	&	\verb|\asec{x}|	&	$\asec{x}$	&	\verb|\acot{x}|	&	$\acot{x}$ \\
+			\verb|\implies|	&	$\implies$	&	\verb|\half|	&	$\half$	&	\verb|\roothalf|	&	$\roothalf$ \\
+			\verb|\third|	&	$\third$	&	\verb|\quarter|	&	$\quarter$	&	\verb|\fourth|	&	$\fourth$ \\
+			\verb|\fifth|	&	$\fifth$	&	\verb|\threequarter|	&	$\threequarter$	&	\verb|\ejomg|	&	$\ejomg$ \\
+			\verb|\ejnomg|	&	$\ejnomg$	&	\verb|\zinv|	&	$\zinv$	&	\verb|\st|	&	$\st$ \\
+			\verb|\ow|	&	$\ow$	&	\verb|\ew|	&	$\ew$	&	\verb|\sgn{x}|	&	$\sgn{x}$ \\
+			\verb|\sign{x}|	&	$\sign{x}$	&	\verb|X\degree|	&	$X\degree$	&	\verb|\Oh{N}|	&	$\Oh{N}$ \\
+			\verb|\oh{N}|	&	$\oh{N}$	&		&		&		&	 \\
+			\hline	
+		\end{tabular}
+	\end{table}
+
+	\subsection*{Basic text colors}
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|l|l|}
+			\hline
+			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description	 \\
+			\hline
+			\verb|\white{text}|	&	\white{text}	&	\verb|\black{text}|	&	\black{text}	&	\verb|\red{text}|	&	\red{text} \\	
+			\verb|\green{text}|	&	\green{text}	&	\verb|\blue{text}|	&	\blue{text}	&	\verb|\cyan{text}|	&	\cyan{text} \\
+			\verb|\magenta{text}|	&	\magenta{text}	&	\verb|\yellow{text}|	&	\yellow{text}	&		&	 \\
+			\hline	
+		\end{tabular}
+	\end{table}
+
+	\subsection*{Special colors that comes with [dvipsnames] option in xcolor package}
+	\begin{table}[H]
+		\begin{tabular}{|l|l|l|l|l|l|}
+			\hline
+			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description	 \\
+			\hline
+			\verb|\Apricot{text}|	&	\Apricot{text}	&	\verb|\Aquamarine{text}|	&	\Aquamarine{text}	&	\verb|\Bittersweet{text}|	&	\Bittersweet{text} \\	
+			\verb|\Black{text}|	&	\Black{text}	&	\verb|\Blue{text}|	&	\Blue{text}	&	\verb|\BlueGreen{text}|	&	\BlueGreen{text} \\
+			\verb|\BlueViolet{text}|	&	\BlueViolet{text}	&	\verb|\BrickRed{text}|	&	\BrickRed{text}	&	\verb|\Brown{text}|	&	\Brown{text} \\			
+			\verb|\BurntOrange{text}|	&	\BurntOrange{text}	&	\verb|\CadetBlue{text}|	&	\CadetBlue{text}	&	\verb|\CarnationPink{text}|	&	\CarnationPink{text} \\	
+			\verb|\Cerulean{text}|	&	\Cerulean{text}	&
+			\verb|\CornflowerBlue{text}|	&	\CornflowerBlue{text}	&	\verb|\Cyan{text}|	&	\Cyan{text}	\\	\verb|\Dandelion{text}|	&	\Dandelion{text} &
+			\verb|\DarkOrchid{text}|	&	\DarkOrchid{text}	&	\verb|\Emerald{text}|	&	\Emerald{text}	\\
+			\verb|\ForestGreen{text}|	&	\ForestGreen{text} &		\verb|\Fuchsia{text}|	&	\Fuchsia{text}	&	\verb|\Goldenrod{text}|	&	\Goldenrod{text} \\	
+			\verb|\Gray{text}|	&	\Gray{text}	&	\verb|\Green{text}|	&	\Green{text}	&	\verb|\GreenYellow{text}|	&	\GreenYellow{text} \\
+			\verb|\JungleGreen{text}|	&	\JungleGreen{text}	&	\verb|\Lavender{text}|	&	\Lavender{text}	&	\verb|\LimeGreen{text}|	&	\LimeGreen{text} \\
+			\verb|\Magenta{text}|	&	\Magenta{text}	&	\verb|\Mahogany{text}|	&	\Mahogany{text}	&	\verb|\Maroon{text}|	&	\Maroon{text} \\	
+			\verb|\Melon{text}|	&	\Melon{text}	&	\verb|\MidnightBlue{text}|	&	\MidnightBlue{text}	&	\verb|\Mulberry{text}|	&	\Mulberry{text} \\
+			\verb|\NavyBlue{text}|	&	\NavyBlue{text}	&	\verb|\OliveGreen{text}|	&	\OliveGreen{text}	&	\verb|\Orange{text}|	&	\Orange{text} \\
+			\verb|\OrangeRed{text}|	&	\OrangeRed{text}	&	\verb|\Orchid{text}|	&	\Orchid{text}	&	\verb|\Peach{text}|	&	\Peach{text} \\	
+			\verb|\Periwinkle{text}|	&	\Periwinkle{text}	&	\verb|\PineGreen{text}|	&	\PineGreen{text}	&	\verb|\Plum{text}|	&	\Plum{text} \\
+			\verb|\ProcessBlue{text}|	&	\ProcessBlue{text}	&	\verb|\Purple{text}|	&	\Purple{text}	&	\verb|\RawSienna{text}|	&	\RawSienna{text} \\
+			\verb|\Red{text}|	&	\Red{text}	&	\verb|\RedOrange{text}|	&	\RedOrange{text}	&	\verb|\RedViolet{text}|	&	\RedViolet{text} \\	
+			\verb|\Rhodamine{text}|	&	\Rhodamine{text}	&	\verb|\RoyalBlue{text}|	&	\RoyalBlue{text}	&	\verb|\RoyalPurple{text}|	&	\RoyalPurple{text} \\
+			\verb|\RubineRed{text}|	&	\RubineRed{text}	&	\verb|\Salmon{text}|	&	\Salmon{text}	&	\verb|\SeaGreen{text}|	&	\SeaGreen{text} \\
+			\verb|\Sepia{text}|	&	\Sepia{text}	&	\verb|\SkyBlue{text}|	&	\SkyBlue{text}	&	\verb|\SpringGreen{text}|	&	\SpringGreen{text} \\	
+			\verb|\Tan{text}|	&	\Tan{text}	&	\verb|\TealBlue{text}|	&	\TealBlue{text}	&	\verb|\Thistle{text}|	&	\Thistle{text} \\
+			\verb|\Turquoise{text}|	&	\Turquoise{text}	&	\verb|\Violet{text}|	&	\Violet{text}	&	\verb|\VioletRed{text}|	&	\VioletRed{text} \\
+			\verb|\White{text}|	&	\White{text}	&	\verb|\WildStrawberry{text}|	&	\WildStrawberry{text}	&	\verb|\Yellow{text}|	&	\Yellow{text} \\	
+			\verb|\YellowGreen{text}|	&	\YellowGreen{text}	&	\verb|\YellowOrange{text}|	&	\YellowOrange{text}	&		&	 \\
+			\hline	
+		\end{tabular}
+	\end{table}
+	
+	\subsection*{Theorem-like environments}
+	\subsubsection*{Definitions}
+	\begin{verbatim}
+		\begin{Theorem}\label{thm:1}
+			\mylipsum
+		\end{Theorem}
+	\end{verbatim}
+	\begin{Theorem}\label{thm:1}
+		\mylipsum
+	\end{Theorem}
+	\begin{verbatim}
+		\begin{Definition}\label{def:1}
+		\mylipsum
+		\end{Definition}
+	\end{verbatim}
+	\begin{Definition}\label{def:1}
+		\mylipsum
+	\end{Definition}
+	\begin{verbatim}
+		\begin{Proposition}\label{prop:1}
+		\mylipsum
+		\end{Proposition}
+	\end{verbatim}
+	\begin{Proposition}\label{prop:1}
+		\mylipsum
+	\end{Proposition}
+	\begin{verbatim}
+		\begin{Lemma}\label{lem:1}
+		\mylipsum
+		\end{Lemma}
+	\end{verbatim}
+	\begin{Lemma}\label{lem:1}
+		\mylipsum
+	\end{Lemma}
+	\begin{verbatim}
+		\begin{Corollary}\label{cor:1}
+		\mylipsum
+		\end{Corollary}
+	\end{verbatim}
+	\begin{Corollary}\label{cor:1}
+		\mylipsum
+	\end{Corollary}
+	\begin{verbatim}
+		\begin{Example}\label{exm:1}
+		\mylipsum
+		\end{Example}
+	\end{verbatim}
+	\begin{Example}\label{exm:1}
+		\mylipsum
+	\end{Example}
+	
+	\subsubsection*{Referencing}
+	\begin{lstlisting}[breaklines]
+Lorem ipsum dolor sit amet \underline{Theorem \ref{thm:1}}, consectetur adipiscing elit. In vel orci id est porta laoreet at non nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas \underline{Definition \ref{def:1}}. Maecenas posuere augue nec turpis pretium faucibus \underline{Proposition \ref{prop:1}}. Pellentesque dui massa, facilisis eu placerat sit amet, tincidunt sit amet nisl. In pellentesque molestie ipsum at dictum \underline{Lemma \ref{lem:1}}. Curabitur libero metus, eleifend porta finibus eu, sagittis nec lorem. Maecenas ante quam, faucibus cursus erat vel, accumsan dictum eros \underline{Corollary \ref{cor:1}}. Quisque commodo libero quis enim laoreet congue. Quisque sed egestas quam. In posuere malesuada mollis \underline{Example \ref{exm:1}}.
+	\end{lstlisting}
+
+	Lorem ipsum dolor sit amet \underline{Theorem \ref{thm:1}}, consectetur adipiscing elit. In vel orci id est porta laoreet at non nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas \underline{Definition \ref{def:1}}. Maecenas posuere augue nec turpis pretium faucibus \underline{Proposition \ref{prop:1}}. Pellentesque dui massa, facilisis eu placerat sit amet, tincidunt sit amet nisl. In pellentesque molestie ipsum at dictum \underline{Lemma \ref{lem:1}}. Curabitur libero metus, eleifend porta finibus eu, sagittis nec lorem. Maecenas ante quam, faucibus cursus erat vel, accumsan dictum eros \underline{Corollary \ref{cor:1}}. Quisque commodo libero quis enim laoreet congue. Quisque sed egestas quam. In posuere malesuada mollis \underline{Example \ref{exm:1}}.
+	\vspace{15pt}
+	
+	
+	\subsection*{Algorithm}
+	\begin{verbatim}
+	\subsection*{Algorithm}
+	\begin{algorithm}[H]
+	\caption{\textsc{ExampleAlgorithm}}\label{alg:1}
+	\begin{algorithmic}[1]
+	\Require \texttt{var1}, \texttt{var2}, $N$ 
+	\Ensure \texttt{var1} $\gets$ 1, \texttt{var2} $\gets$ 1, \texttt{flag} $\gets$ 0
+	\While{\texttt{flag}}
+	\State \texttt{var1} $\gets$ \textsc{DoSomeStuff}
+	\State \texttt{var2} $\gets$ \textsc{DoSomeMoreStuff}
+	\If{\texttt{var1} $\leq N$}
+	\State \texttt{flag} $\gets 1$
+	\Else
+	\State \texttt{var3} $\gets$ \texttt{var1} $+$ \texttt{var2}
+	\EndIf
+	\EndWhile\label{euclidendwhile}
+	
+	\State \textbf{return} \texttt{var3}
+	\end{algorithmic}
+	\end{algorithm}
+	\end{verbatim}
+	\begin{algorithm}[H]
+		\caption{\textsc{ExampleAlgorithm}}\label{alg:1}
+		\begin{algorithmic}[1]
+			\Require \texttt{var1}, \texttt{var2}, $N$ 
+			\Ensure \texttt{var1} $\gets$ 1, \texttt{var2} $\gets$ 1, \texttt{flag} $\gets$ 0
+			\While{\texttt{flag}}
+			\State \texttt{var1} $\gets$ \textsc{DoSomeStuff}
+			
+			\State \texttt{var2} $\gets$ \textsc{DoSomeMoreStuff}
+			
+			\If{\texttt{var1} $\leq N$}
+			\State \texttt{flag} $\gets 1$
+			\Else
+			\State \texttt{var3} $\gets$ \texttt{var1} $+$ \texttt{var2}
+			\EndIf
+			\EndWhile\label{euclidendwhile}
+			
+			\State \textbf{return} \texttt{var3}
+		\end{algorithmic}
+	\end{algorithm}
+	
+\end{document}
