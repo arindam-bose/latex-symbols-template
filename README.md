@@ -1,5 +1,6 @@
 # Latex symbols template (2.0.02)
-Short symbol commands for <img src="https://latex.codecogs.com/gif.latex?\LaTeX" title="\LaTeX" />
+Short symbol commands for <img src="https://latex.codecogs.com/gif.latex?\LaTeX" title="\LaTeX" /></br>
+Warning Note: Not backward compatible with anything before version 2.0.00.
 
 ### Installation and usage:
 1. Download the `symbols.tex` file and put is in the same folder as that of the main `.tex` file.
