@@ -1,33 +1,41 @@
 \documentclass{article}
 \usepackage{float}
 \usepackage[margin=0.8in]{geometry}
-\usepackage{algorithm, listings, lipsum}
+\usepackage{lipsum, fancyvrb, fvextra}
+\input{symbols.tex}
+
 \newcommand{\mylipsum}{Lorem ipsum dolor sit amet, consectetur adipiscing elit. Praesent luctus sem nibh, et venenatis mauris aliquet et. Sed velit nisl.}
 
-\input{symbols.tex}
-\title{\Huge{\textbf{Latex Symbols Template}} \\\vspace{10pt} \Large{Short symbol commands for \LaTeX} \\ \vspace{10pt} version: 2.0.01 \vspace{20pt}}
-\author{Arindam Bose}
+\title{\Huge{\textbf{Latex Symbols Template}} \\\vspace{10pt} \Large{Short symbol commands for \LaTeX} \\ \vspace{10pt} version: \Version \vspace{20pt}}
+\author{\Author}
+\date{\Update}
  
 \begin{document}
-	\maketitle
+	\maketitle\newpage
+	\tableofcontents
 	
 	\newpage
-	\section*{Installation and usage:}
+	\section{Installation and usage:}
 	\begin{enumerate}
 		\item Download the \texttt{symbols.tex} file and put is in the same folder as that of the main \texttt{.tex} file.
 		\item Add \verb|\input{symbols.tex}| after all \verb|\usepackage{}| headers in the main \texttt{.tex} file.
 		\item Refer to \texttt{test.tex} and \texttt{test.pdf} for further help.
 	\end{enumerate}
 	
-	\section*{Required packages (included):}
+	\section{Packages used:}
+	Thanks to these packages. They are all included and no need to include them manually. Other packages might have issues with it.
 	\begin{enumerate}
+		\item \texttt{algorithm}
 		\item \texttt{amsmath}
+		\item \texttt{amsthm}
+		\item \texttt{amssymb}
 		\item \texttt{dsfont}
 		\item \texttt{algpseudocode}
+		\item \texttt{thmtools}
 		\item \texttt{xcolor}
 	\end{enumerate}
 	
-	\section*{Available environments:}
+	\section{Available environments:}
 	\begin{enumerate}
 		\item \texttt{Theorem}
 		\item \texttt{Definition}
@@ -35,19 +43,22 @@
 		\item \texttt{Lemma}
 		\item \texttt{Corollary}
 		\item \texttt{Example}
+		\item \texttt{Remark}
 	\end{enumerate}
-	See Section \{Theorem-like environments\} below for usage information.
+	See Section \ref{sec:env} for usage information.
 	
-	\section*{Extras in algorithms:}
+	\section{Extras in algorithms:}
 	If you use \texttt{algorithmic} inside \texttt{algorithm} environment,
 	\begin{enumerate}
-		\item using \verb|\Require| will result into \texttt{Input:},
-		\item using \verb|\Ensure| will result into \texttt{Initialize:}.
+		\item using \verb|\Require| will result into \texttt{Input:}
+		\item using \verb|\Ensure| will result into \texttt{Initialize:}
+		\item \verb|\Print| command compatible with required packages
 	\end{enumerate}
-	See Section \{Algorithm\} below for usage information.
+	See Section \ref{sec:algo} for usage information.
 	
-	\section*{Table of usage:}
-	\subsection*{Lower case bold English alphabets}
+	\newpage
+	\section{Tables of usage:}
+	\subsection{Lower case bold English alphabets}
 	\begin{table}[H]
 		\begin{tabular}{|l|l|l|l|l|l|l|l|}
 			\hline
@@ -64,7 +75,7 @@
 		\end{tabular}
 	\end{table}
 
-	\subsection*{Upper case bold English alphabets}
+	\subsection{Upper case bold English alphabets}
 	\begin{table}[H]
 		\begin{tabular}{|l|l|l|l|l|l|l|l|}
 			\hline
@@ -81,7 +92,7 @@
 		\end{tabular}
 	\end{table}
 
-	\subsection*{Bold Greek alphabets}
+	\subsection{Bold Greek alphabets}
 	\begin{table}[H]
 		\begin{tabular}{|l|l|l|l|l|l|l|l|}
 			\hline
@@ -104,7 +115,7 @@
 		\end{tabular}
 	\end{table}
 
-	\subsection*{Mathbf lower case English alphabets}
+	\subsection{Mathbf lower case English alphabets}
 	\begin{table}[H]
 		\begin{tabular}{|l|l|l|l|l|l|l|l|}
 			\hline
@@ -121,7 +132,7 @@
 		\end{tabular}
 	\end{table}
 	
-	\subsection*{Mathbf upper case English alphabets}
+	\subsection{Mathbf upper case English alphabets}
 	\begin{table}[H]
 		\begin{tabular}{|l|l|l|l|l|l|l|l|}
 			\hline
@@ -138,7 +149,7 @@
 		\end{tabular}
 	\end{table}
 
-	\subsection*{Caligraphy upper case English alphabets}
+	\subsection{Caligraphy upper case English alphabets}
 	\begin{table}[H]
 		\begin{tabular}{|l|l|l|l|l|l|l|l|}
 			\hline
@@ -155,7 +166,7 @@
 		\end{tabular}
 	\end{table}
 
-	\subsection*{Numbers}
+	\subsection{Numbers}
 	\begin{table}[H]
 		\begin{tabular}{|l|l|l|l|}
 			\hline
@@ -166,7 +177,7 @@
 		\end{tabular}
 	\end{table}
 
-	\subsection*{Sets and notations}
+	\subsection{Sets and notations}
 	\begin{table}[H]
 		\begin{tabular}{|l|l|l|l|l|l|l|l|}
 			\hline
@@ -180,7 +191,7 @@
 		\end{tabular}
 	\end{table}
 
-	\subsection*{Matrix terms}
+	\subsection{Matrix terms}
 	\begin{table}[H]
 		\begin{tabular}{|l|l|l|l|l|l|}
 			\hline
@@ -193,7 +204,7 @@
 		\end{tabular}
 	\end{table}
 
-	\subsection*{Misc.}
+	\subsection{Misc.}
 	\begin{table}[H]
 		\begin{tabular}{|l|l|l|l|l|l|}
 			\hline
@@ -206,13 +217,13 @@
 			\verb|\fifth|	&	$\fifth$	&	\verb|\threequarter|	&	$\threequarter$	&	\verb|\ejomg|	&	$\ejomg$ \\
 			\verb|\ejnomg|	&	$\ejnomg$	&	\verb|\zinv|	&	$\zinv$	&	\verb|\st|	&	$\st$ \\
 			\verb|\ow|	&	$\ow$	&	\verb|\ew|	&	$\ew$	&	\verb|\sgn{x}|	&	$\sgn{x}$ \\
-			\verb|\sign{x}|	&	$\sign{x}$	&	\verb|X\degree|	&	$X\degree$	&	\verb|\Oh{N}|	&	$\Oh{N}$ \\
-			\verb|\oh{N}|	&	$\oh{N}$	&		&		&		&	 \\
+			\verb|\sign{x}|	&	$\sign{x}$	&	\verb|\csign{x}|	&	$\csign{x}$ & \verb|X\deg|	&	$X\deg$	\\
+			\verb|\Oh{N}|	&	$\Oh{N}$	&	\verb|\oh{N}|	&	$\oh{N}$	&		&	 \\
 			\hline	
 		\end{tabular}
 	\end{table}
 
-	\subsection*{Basic text colors}
+	\subsection{Basic text colors}
 	\begin{table}[H]
 		\begin{tabular}{|l|l|l|l|l|l|}
 			\hline
@@ -225,7 +236,7 @@
 		\end{tabular}
 	\end{table}
 
-	\subsection*{Special colors that comes with [dvipsnames] option in xcolor package}
+	\subsection{Special colors that comes with [dvipsnames] option in xcolor package}
 	\begin{table}[H]
 		\begin{tabular}{|l|l|l|l|l|l|}
 			\hline
@@ -259,107 +270,173 @@
 		\end{tabular}
 	\end{table}
 	
-	\subsection*{Theorem-like environments}
-	\subsubsection*{Definitions}
-	\begin{verbatim}
-		\begin{Theorem}\label{thm:1}
-			\mylipsum
-		\end{Theorem}
-	\end{verbatim}
-	\begin{Theorem}\label{thm:1}
+	\newpage
+	\section{Theorem-like environments}\label{sec:env}
+	\subsection{Theorems}
+	\begin{Verbatim}[tabsize=4]
+	\begin{theorem}\label{thm:1}
 		\mylipsum
-	\end{Theorem}
-	\begin{verbatim}
-		\begin{Definition}\label{def:1}
+	\end{theorem}
+	\end{Verbatim}
+	\begin{theorem}\label{thm:1}
 		\mylipsum
-		\end{Definition}
-	\end{verbatim}
-	\begin{Definition}\label{def:1}
-		\mylipsum
-	\end{Definition}
-	\begin{verbatim}
-		\begin{Proposition}\label{prop:1}
-		\mylipsum
-		\end{Proposition}
-	\end{verbatim}
-	\begin{Proposition}\label{prop:1}
-		\mylipsum
-	\end{Proposition}
-	\begin{verbatim}
-		\begin{Lemma}\label{lem:1}
-		\mylipsum
-		\end{Lemma}
-	\end{verbatim}
-	\begin{Lemma}\label{lem:1}
-		\mylipsum
-	\end{Lemma}
-	\begin{verbatim}
-		\begin{Corollary}\label{cor:1}
-		\mylipsum
-		\end{Corollary}
-	\end{verbatim}
-	\begin{Corollary}\label{cor:1}
-		\mylipsum
-	\end{Corollary}
-	\begin{verbatim}
-		\begin{Example}\label{exm:1}
-		\mylipsum
-		\end{Example}
-	\end{verbatim}
-	\begin{Example}\label{exm:1}
-		\mylipsum
-	\end{Example}
-	
-	\subsubsection*{Referencing}
-	\begin{lstlisting}[breaklines]
-Lorem ipsum dolor sit amet \underline{Theorem \ref{thm:1}}, consectetur adipiscing elit. In vel orci id est porta laoreet at non nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas \underline{Definition \ref{def:1}}. Maecenas posuere augue nec turpis pretium faucibus \underline{Proposition \ref{prop:1}}. Pellentesque dui massa, facilisis eu placerat sit amet, tincidunt sit amet nisl. In pellentesque molestie ipsum at dictum \underline{Lemma \ref{lem:1}}. Curabitur libero metus, eleifend porta finibus eu, sagittis nec lorem. Maecenas ante quam, faucibus cursus erat vel, accumsan dictum eros \underline{Corollary \ref{cor:1}}. Quisque commodo libero quis enim laoreet congue. Quisque sed egestas quam. In posuere malesuada mollis \underline{Example \ref{exm:1}}.
-	\end{lstlisting}
+	\end{theorem}
 
+	\subsection{Definitions}
+	\begin{Verbatim}[tabsize=4]
+	\begin{definition}\label{def:1}
+		\mylipsum
+	\end{definition}
+	\end{Verbatim}
+	\begin{definition}\label{def:1}
+		\mylipsum
+	\end{definition}
+
+	\subsection{Propositions}
+	\begin{Verbatim}[tabsize=4]
+	\begin{proposition}\label{prop:1}
+		\mylipsum
+	\end{proposition}
+	\end{Verbatim}
+	\begin{proposition}\label{prop:1}
+		\mylipsum
+	\end{proposition}
+
+	\subsection{Lemmas}
+	\begin{Verbatim}[tabsize=4]
+	\begin{lemma}\label{lem:1}
+		\mylipsum
+	\end{lemma}
+	\end{Verbatim}
+	\begin{lemma}\label{lem:1}
+		\mylipsum
+	\end{lemma}
+
+	\subsection{Corollaries}
+	\begin{Verbatim}[tabsize=4]
+	\begin{corollary}\label{cor:1}
+		\mylipsum
+	\end{corollary}
+	\end{Verbatim}
+	\begin{corollary}\label{cor:1}
+		\mylipsum
+	\end{corollary}
+
+	\subsection{Examples}
+	\begin{Verbatim}[tabsize=4]
+	\begin{example}\label{exm:1}
+		\mylipsum
+	\end{example}
+	\end{Verbatim}
+	\begin{example}\label{exm:1}
+		\mylipsum
+	\end{example}
+
+	\subsection{Remarks}
+	\begin{Verbatim}[tabsize=4]
+	\begin{remark}\label{rem:1}
+		\mylipsum
+	\end{remark}
+	\end{Verbatim}
+	\begin{remark}\label{rem:1}
+		\mylipsum
+	\end{remark}
+	
+	\subsection{Referencing}
+	\begin{Verbatim}[breaklines=true]
 	Lorem ipsum dolor sit amet \underline{Theorem \ref{thm:1}}, consectetur adipiscing elit. In vel orci id est porta laoreet at non nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas \underline{Definition \ref{def:1}}. Maecenas posuere augue nec turpis pretium faucibus \underline{Proposition \ref{prop:1}}. Pellentesque dui massa, facilisis eu placerat sit amet, tincidunt sit amet nisl. In pellentesque molestie ipsum at dictum \underline{Lemma \ref{lem:1}}. Curabitur libero metus, eleifend porta finibus eu, sagittis nec lorem. Maecenas ante quam, faucibus cursus erat vel, accumsan dictum eros \underline{Corollary \ref{cor:1}}. Quisque commodo libero quis enim laoreet congue. Quisque sed egestas quam. In posuere malesuada mollis \underline{Example \ref{exm:1}}.
+	\end{Verbatim}
+
+	Lorem ipsum dolor sit amet \underline{Theorem \ref{thm:1}}, consectetur adipiscing elit. In vel orci id est porta laoreet at non nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas \underline{Definition \ref{def:1}}. Maecenas posuere augue nec turpis pretium faucibus \underline{Proposition \ref{prop:1}}. Pellentesque dui massa, facilisis eu placerat sit amet, tincidunt sit amet nisl. In pellentesque molestie ipsum at dictum \underline{Lemma \ref{lem:1}}. Curabitur libero metus, eleifend porta finibus eu, sagittis nec lorem. Maecenas ante quam, faucibus cursus erat vel, accumsan dictum eros \underline{Corollary \ref{cor:1}}. Quisque commodo libero quis enim laoreet congue. Quisque sed egestas quam \underline{Remark \ref{rem:1}}. In posuere malesuada mollis \underline{Example \ref{exm:1}}.
 	\vspace{15pt}
 	
-	
-	\subsection*{Algorithm}
-	\begin{verbatim}
-	\subsection*{Algorithm}
-	\begin{algorithm}[H]
-	\caption{\textsc{ExampleAlgorithm}}\label{alg:1}
-	\begin{algorithmic}[1]
-	\Require \texttt{var1}, \texttt{var2}, $N$ 
-	\Ensure \texttt{var1} $\gets$ 1, \texttt{var2} $\gets$ 1, \texttt{flag} $\gets$ 0
-	\While{\texttt{flag}}
-	\State \texttt{var1} $\gets$ \textsc{DoSomeStuff}
-	\State \texttt{var2} $\gets$ \textsc{DoSomeMoreStuff}
-	\If{\texttt{var1} $\leq N$}
-	\State \texttt{flag} $\gets 1$
-	\Else
-	\State \texttt{var3} $\gets$ \texttt{var1} $+$ \texttt{var2}
-	\EndIf
-	\EndWhile\label{euclidendwhile}
-	
-	\State \textbf{return} \texttt{var3}
-	\end{algorithmic}
-	\end{algorithm}
-	\end{verbatim}
+	\newpage
+	\section{Algorithm}\label{sec:algo}
+	\begin{Verbatim}[tabsize=4]
 	\begin{algorithm}[H]
 		\caption{\textsc{ExampleAlgorithm}}\label{alg:1}
 		\begin{algorithmic}[1]
 			\Require \texttt{var1}, \texttt{var2}, $N$ 
 			\Ensure \texttt{var1} $\gets$ 1, \texttt{var2} $\gets$ 1, \texttt{flag} $\gets$ 0
-			\While{\texttt{flag}}
-			\State \texttt{var1} $\gets$ \textsc{DoSomeStuff}
-			
-			\State \texttt{var2} $\gets$ \textsc{DoSomeMoreStuff}
-			
-			\If{\texttt{var1} $\leq N$}
-			\State \texttt{flag} $\gets 1$
-			\Else
-			\State \texttt{var3} $\gets$ \texttt{var1} $+$ \texttt{var2}
-			\EndIf
-			\EndWhile\label{euclidendwhile}
-			
-			\State \textbf{return} \texttt{var3}
+			\Comment This is just an example algorithm. These logics don't mean shit.
+			\Repeat
+				\For{$i=0$ \textbf{to} $10$}	
+					\While{\texttt{flag}}
+						\State \texttt{var1} $\gets$ \textsc{DoSomeShit}
+						\State \texttt{var2} $\gets$ \textsc{DoSomeMoreShit}
+						\If{\texttt{var1} $< N$}
+							\State \texttt{flag} $\gets 1$
+						\ElsIf{\texttt{var1} $= N$}
+							\State \texttt{flag} $\gets 0$
+						\Else
+							\State \texttt{var3} $\gets$ \texttt{var1} $+$ \texttt{var2}
+						\EndIf
+					\EndWhile
+				\EndFor
+			\Until \textsc{SomeConditionIsMet}
+			\Loop
+				\State \textsc{SomeInfiniteLoopShit}
+				\State \Print{some shit}
+			\EndLoop
+			\State \Return \texttt{var3}
 		\end{algorithmic}
 	\end{algorithm}
+	\end{Verbatim}
+	\begin{algorithm}[H]
+		\caption{\textsc{ExampleAlgorithm}}\label{alg:1}
+		\begin{algorithmic}[1]
+			\Require \texttt{var1}, \texttt{var2}, $N$ 
+			\Ensure \texttt{var1} $\gets$ 1, \texttt{var2} $\gets$ 1, \texttt{flag} $\gets$ 0
+			\Comment This is just an example algorithm. These logics don't mean shit.
+			\Repeat
+			\For{$i=0$ \textbf{to} $10$}	
+				\While{\texttt{flag}}
+					\State \texttt{var1} $\gets$ \textsc{DoSomeShit}
+					
+					\State \texttt{var2} $\gets$ \textsc{DoSomeMoreShit}
+					
+					\If{\texttt{var1} $< N$}
+						\State \texttt{flag} $\gets 1$
+					\ElsIf{\texttt{var1} $= N$}
+						\State \texttt{flag} $\gets 0$
+					\Else
+						\State \texttt{var3} $\gets$ \texttt{var1} $+$ \texttt{var2}
+					\EndIf
+				\EndWhile
+			\EndFor
+			\Until \textsc{SomeConditionIsMet}
+			\Loop
+				\State \textsc{SomeInfiniteLoopShit}
+				\State \Print{some shit}
+			\EndLoop
+			\State \Return \texttt{var3}
+		\end{algorithmic}
+	\end{algorithm}
+	
+	\newpage
+	\section{Underbrace inside a matrix environment}
+	Short usage: \verb|\undermat{arg1}{arg2}| \\
+	For example:
+	\begin{align*}
+	\bJ_k = 
+		\begin{bmatrix}
+			0              & \dots & 0     & 1     & \dots  & 0 \\
+			\vdots         &       &       &       & \ddots &   \\
+			               &       &       &       &        & 1 \\
+			\undermat{0    & \dots & 0}{k} & \dots &        &   \\
+		\end{bmatrix}
+	\end{align*}
+	Code:
+	\begin{Verbatim}[tabsize=4]
+	\begin{align*}
+	\bJ_k = 
+		\begin{bmatrix}
+			0              & \dots & 0     & 1     & \dots  & 0 \\
+			\vdots         &       &       &       & \ddots &   \\
+			               &       &       &       &        & 1 \\
+			\undermat{0    & \dots & 0}{k} & \dots &        &   \\
+		\end{bmatrix}
+	\end{align*}
+	\end{Verbatim}
 	
 \end{document}

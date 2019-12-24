@@ -1,10 +1,16 @@
 %% Short symbol commands for LaTex
-%% Author: Arindam Bose
-%% Version: 2.0.02
-%% Last update: 12-18-2019
-%% Requires packages: amsmath, xcolor, dsfont, algpseudocode
-\usepackage{amsmath, dsfont, algpseudocode}
+\usepackage{amsmath}
+\usepackage{algpseudocode}
+\usepackage{amsthm}
+\usepackage{dsfont}
+\usepackage{algorithm}
+\usepackage{thmtools}
+\usepackage{amssymb}
 \usepackage[dvipsnames]{xcolor}
+
+\def \Author{Arindam~Bose}
+\def \Version{2.0.04}
+\def \Update{\today}
 
 % Lower case bold English alphabets
 \def\ba{\boldsymbol{a}}
@@ -235,7 +241,8 @@
 \def\ew{~\mathrm{elsewhere}~}
 \def\sgn#1{\mathrm{sgn}(#1)}
 \def\sign#1{\mathrm{sign}(#1)}
-\def\degree{^\circ}
+\def\csign#1{\mathrm{csign}\left(#1\right)}
+\def\deg{^\circ}
 \def\Oh#1{\mathcal{O}(#1)}
 \def\oh#1{o(#1)}
 
@@ -321,13 +328,21 @@
 \def\YellowOrange#1{\textcolor{YellowOrange}{#1}}
 
 % Theorem-like environments (defs, lemmas numbered like Theorems)
-\newtheorem{Theorem}{Theorem}
-\newtheorem{Definition}{Definition}
-\newtheorem{Proposition}{Proposition}
-\newtheorem{Lemma}{Lemma}
-\newtheorem{Corollary}{Corollary}
-\newtheorem{Example}{Example}
+\newtheorem{theorem}{Theorem}
+\newtheorem{proposition}{Proposition}
+\newtheorem{lemma}{Lemma}
+\newtheorem{corollary}{Corollary}
+\newtheorem{example}{Example}
+\theoremstyle{definition}
+\newtheorem{definition}{Definition}
+\declaretheorem[style=definition,name=Remark,qed=$\blacksquare$]{remark}
 
 % algorithms
 \renewcommand{\algorithmicrequire}{\textbf{Input:}}
 \renewcommand{\algorithmicensure}{\textbf{Initialize:}}
+\def\Print#1{\textbf{print}~#1}
+
+% underbrace inside a matrix environment
+\newcommand\undermat[2]{
+	\makebox[0pt][l]{${\underbrace{\hphantom{
+					\begin{matrix}#1\end{matrix}}}_{\text{$#2$}}}$}#1}
