@@ -25,7 +25,7 @@ Warning Note: Not backward compatible with anything before version 2.0.00.
 3. `Proposition`
 4. `Lemma`
 5. `Corollary`
-6. `Example
+6. `Example`
 7. `Remark`
 
 
