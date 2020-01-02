@@ -147,7 +147,7 @@ If you use `algorithmic` inside `algorithm` environment,
 | `\sign{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{sign}(x)" /> | `\csign{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{csign}(x)" /> | `X\deg` | <img src="https://latex.codecogs.com/gif.latex?X^\circ" /> |
 | `\Oh{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{O}(N)" /> | `\oh{N}` | <img src="https://latex.codecogs.com/gif.latex?o(N)" /> | `\st` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{s.t.}" /> |
 | `\ow` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{otherwise}" /> | `\ew` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{elsewhere}" /> | `\eg` | <img src="https://latex.codecogs.com/gif.latex?\textit{e.g.}" /> |
-| `\ie` | <img src="https://latex.codecogs.com/gif.latex?\textit{i.e.}" /> | `\etal` | <img src="https://latex.codecogs.com/gif.latex?\textit{et al.}" /> |
+| `\ie` | <img src="https://latex.codecogs.com/gif.latex?\textit{i.e.}" /> | `\etal` | <img src="https://latex.codecogs.com/gif.latex?\textit{et%20al.}" /> |
 
 #### Basic text colors
 | Syntax | Description | Syntax | Description | Syntax | Description |
