@@ -9,7 +9,7 @@
 \usepackage[dvipsnames]{xcolor}
 
 \def \Author{Arindam~Bose}
-\def \Version{2.0.04}
+\def \Version{2.0.06}
 \def \Update{\today}
 
 % Lower case bold English alphabets
@@ -201,30 +201,30 @@
 \newcommand{\complexC}[1]{\mathds{C}^{#1}}
 \newcommand{\expecE}[1]{\mathds{E}\left\{{#1}\right\}}
 \newcommand{\naturalN}[1]{\mathds{N}^{#1}}
-\newcommand{\probP}[1]{\mathds{P}\left\{{#1}\right\}}
+\newcommand{\probP}[1]{\mathds{P}\mathrm{r}\left\{{#1}\right\}}
 \newcommand{\rationalQ}[1]{\mathds{Q}^{#1}}
 \newcommand{\realR}[1]{\mathds{R}^{#1}}
 \newcommand{\realRp}[1]{\mathds{R}_{+}^{#1}}
 \newcommand{\realRn}[1]{\mathds{R}_{-}^{#1}}
 \newcommand{\integerZ}[1]{\mathds{Z}^{#1}}
 
-% matrix terms
-\def\tr#1{\mathrm{tr}(#1)}
-\def\vec#1{\mathrm{vec}(#1)}
-\def\diag#1{\mathrm{diag}(#1)}
-\def\Diag#1{\mathrm{Diag}(#1)}
-\def\bdiag#1{\mathbf{diag}(#1)}
-\def\cov#1{\mathrm{cov}(#1)}
-\def\Cov#1{\mathrm{Cov}(#1)}
-\def\bcov#1{\mathbf{cov}(#1)}
+% Matrix terms
+\def\tr#1{\mathrm{Tr}\left(#1\right)}
+\def\vec#1{\mathrm{vec}\left(#1\right)}
+\def\diag#1{\mathrm{diag}\left(#1\right)}
+\def\Diag#1{\mathrm{Diag}\left(#1\right)}
+\def\bdiag#1{\mathbf{diag}\left(#1\right)}
+\def\cov#1{\mathrm{cov}\left(#1\right)}
+\def\Cov#1{\mathrm{Cov}\left(#1\right)}
+\def\bcov#1{\mathbf{cov}\left(#1\right)}
 
 % Misc
-\def\asin#1{\sin^{-1}(#1)}
-\def\acos#1{\cos^{-1}(#1)}
-\def\atan#1{\tan^{-1}(#1)}
-\def\acsc#1{\csc^{-1}(#1)}
-\def\asec#1{\sec^{-1}(#1)}
-\def\acot#1{\cot^{-1}(#1)}
+\def\asin#1{\sin^{-1}\left(#1\right)}
+\def\acos#1{\cos^{-1}\left(#1\right)}
+\def\atan#1{\tan^{-1}\left(#1\right)}
+\def\acsc#1{\csc^{-1}\left(#1\right)}
+\def\asec#1{\sec^{-1}\left(#1\right)}
+\def\acot#1{\cot^{-1}\left(#1\right)}
 \def\implies{\Rightarrow}
 \def\half{\frac{1}{2}}
 \def\roothalf{\frac{1}{\sqrt{2}}}
@@ -236,15 +236,18 @@
 \def\ejomg{e^{j\omega}}
 \def\ejnomg{e^{-j\omega}}
 \def\zinv{z^{-1}}
+\def\sgn#1{\mathrm{sgn}\left(#1\right)}
+\def\sign#1{\mathrm{sign}\left(#1\right)}
+\def\csign#1{\mathrm{csign}\left(#1\right)}
+\def\deg{^\circ}
+\def\Oh#1{\mathcal{O}\left(#1\right)}
+\def\oh#1{o\left(#1\right)}
 \def\st{~\mathrm{s.t.}~}
 \def\ow{~\mathrm{otherwise}~}
 \def\ew{~\mathrm{elsewhere}~}
-\def\sgn#1{\mathrm{sgn}(#1)}
-\def\sign#1{\mathrm{sign}(#1)}
-\def\csign#1{\mathrm{csign}\left(#1\right)}
-\def\deg{^\circ}
-\def\Oh#1{\mathcal{O}(#1)}
-\def\oh#1{o(#1)}
+\def\eg{\textit{e.g.}}
+\def\ie{\textit{i.e.}}
+\def\etal{\textit{et al.}}
 
 % Basic text colors
 \def\white#1{\textcolor{white}{#1}}
