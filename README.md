@@ -1,4 +1,4 @@
-# Latex symbols template (2.0.06)
+# Latex symbols template (2.0.08)
 Short symbol commands for <img src="https://latex.codecogs.com/gif.latex?\LaTeX" title="\LaTeX" /></br>
 Warning Note: Not backward compatible with anything before version 2.0.00.
 
@@ -27,13 +27,18 @@ Warning Note: Not backward compatible with anything before version 2.0.00.
 5. `Corollary`
 6. `Example`
 7. `Remark`
+8. `Subsec`
 
 
 ### Extras in algorithms:
 If you use `algorithmic` inside `algorithm` environment,
-1. using `\Require` will result into `Input:`
-2. using `\Ensure` will result into `Initialize:`
-3. `\Print` command compatible with required packages.
+1. All the following introductory commands are valid
+	a. using `\Require` will result into `Require:`
+	b. using `\Ensure` will result into `Ensure:`
+	c. using `\Input` will result into `Input:`
+	d. using `\Init` will result into `Initialize:`
+	e. using `\Output` will result into `Output:`
+2. `\Print` and `\To` commands are compatible with required packages
 
 
 ### Table of usage:
@@ -147,7 +152,8 @@ If you use `algorithmic` inside `algorithm` environment,
 | `\sign{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{sign}(x)" /> | `\csign{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{csign}(x)" /> | `X\deg` | <img src="https://latex.codecogs.com/gif.latex?X^\circ" /> |
 | `\Oh{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{O}(N)" /> | `\oh{N}` | <img src="https://latex.codecogs.com/gif.latex?o(N)" /> | `\st` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{s.t.}" /> |
 | `\ow` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{otherwise}" /> | `\ew` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{elsewhere}" /> | `\eg` | <img src="https://latex.codecogs.com/gif.latex?\textit{e.g.}" /> |
-| `\ie` | <img src="https://latex.codecogs.com/gif.latex?\textit{i.e.}" /> | `\etal` | <img src="https://latex.codecogs.com/gif.latex?\textit{et%20al.}" /> |
+| `\ie` | <img src="https://latex.codecogs.com/gif.latex?\textit{i.e.}" /> | `\etal` | <img src="https://latex.codecogs.com/gif.latex?\textit{et%20al.}" /> | `\etc` | <img src="https://latex.codecogs.com/gif.latex?\textit{etc.}" /> |
+| `\viz` | <img src="https://latex.codecogs.com/gif.latex?\textit{viz.}" /> | `\d{y}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{d}y" /> |  | |
 
 #### Basic text colors
 | Syntax | Description | Syntax | Description | Syntax | Description |

@@ -44,17 +44,25 @@
 		\item \texttt{Corollary}
 		\item \texttt{Example}
 		\item \texttt{Remark}
+		\item \texttt{subsec}
 	\end{enumerate}
 	See Section \ref{sec:env} for usage information.
 	
 	\section{Extras in algorithms:}
 	If you use \texttt{algorithmic} inside \texttt{algorithm} environment,
 	\begin{enumerate}
-		\item using \verb|\Require| will result into \texttt{Input:}
-		\item using \verb|\Ensure| will result into \texttt{Initialize:}
-		\item \verb|\Print| command compatible with required packages
+		\item All the following introductory commands are valid
+		\begin{itemize}
+			\item using \verb|\Require| will result into \texttt{Require:}
+			\item using \verb|\Ensure| will result into \texttt{Ensure:}
+			\item using \verb|\Input| will result into \texttt{Input:}
+			\item using \verb|\Init| will result into \texttt{Initialize:}
+			\item using \verb|\Output| will result into \texttt{Output:}
+		\end{itemize}
+		\item \verb|\Print| and \verb|\To| commands are compatible with required packages
 	\end{enumerate}
 	See Section \ref{sec:algo} for usage information.
+	
 	
 	\newpage
 	\section{Tables of usage:}
@@ -216,11 +224,11 @@
 			\verb|\third|	&	$\third$	&	\verb|\quarter|	&	$\quarter$	&	\verb|\fourth|	&	$\fourth$ \\
 			\verb|\fifth|	&	$\fifth$	&	\verb|\threequarter|	&	$\threequarter$	&	\verb|\ejomg|	&	$\ejomg$ \\
 			\verb|\ejnomg|	&	$\ejnomg$	&	\verb|\zinv|	&	$\zinv$	&	\verb|\sgn{x}|	&	$\sgn{x}$ \\
-			\verb|\sign{x}|	&	$\sign{x}$	&	\verb|\csign{x}|	&	$\csign{x}$ & \verb|X\deg|	&	$X\deg$	\\
-			
+			\verb|\sign{x}|	&	$\sign{x}$	&	\verb|\csign{x}|	&	$\csign{x}$ & \verb|X\deg|	&	$X\deg$	\\			
 			\verb|\Oh{N}|	&	$\Oh{N}$	&	\verb|\oh{N}|	&	$\oh{N}$	&	\verb|\st|	&	$\st$ \\
 			\verb|\ow|	&	$\ow$	&	\verb|\ew|	&	$\ew$	&	\verb|\eg|	&	\eg \\
-			\verb|\ie|	&	\ie	&	\verb|\etal|	&	\etal	&		&	 \\
+			\verb|\ie|	&	\ie	&	\verb|\etal|	&	\etal	&	\verb|\etc|	&	\etc \\
+			\verb|\viz|	&	\viz & \verb|\d{y}|	&	$\d{y}$	&		&		\\
 			\hline	
 		\end{tabular}
 	\end{table}
@@ -344,13 +352,20 @@
 		\mylipsum
 	\end{remark}
 	
-	\subsection{Referencing}
+	\subsection*{Referencing}
 	\begin{Verbatim}[breaklines=true]
 	Lorem ipsum dolor sit amet \underline{Theorem \ref{thm:1}}, consectetur adipiscing elit. In vel orci id est porta laoreet at non nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas \underline{Definition \ref{def:1}}. Maecenas posuere augue nec turpis pretium faucibus \underline{Proposition \ref{prop:1}}. Pellentesque dui massa, facilisis eu placerat sit amet, tincidunt sit amet nisl. In pellentesque molestie ipsum at dictum \underline{Lemma \ref{lem:1}}. Curabitur libero metus, eleifend porta finibus eu, sagittis nec lorem. Maecenas ante quam, faucibus cursus erat vel, accumsan dictum eros \underline{Corollary \ref{cor:1}}. Quisque commodo libero quis enim laoreet congue. Quisque sed egestas quam. In posuere malesuada mollis \underline{Example \ref{exm:1}}.
 	\end{Verbatim}
 
 	Lorem ipsum dolor sit amet \underline{Theorem \ref{thm:1}}, consectetur adipiscing elit. In vel orci id est porta laoreet at non nisl. Pellentesque habitant morbi tristique senectus et netus et malesuada fames ac turpis egestas \underline{Definition \ref{def:1}}. Maecenas posuere augue nec turpis pretium faucibus \underline{Proposition \ref{prop:1}}. Pellentesque dui massa, facilisis eu placerat sit amet, tincidunt sit amet nisl. In pellentesque molestie ipsum at dictum \underline{Lemma \ref{lem:1}}. Curabitur libero metus, eleifend porta finibus eu, sagittis nec lorem. Maecenas ante quam, faucibus cursus erat vel, accumsan dictum eros \underline{Corollary \ref{cor:1}}. Quisque commodo libero quis enim laoreet congue. Quisque sed egestas quam \underline{Remark \ref{rem:1}}. In posuere malesuada mollis \underline{Example \ref{exm:1}}.
-	\vspace{15pt}
+	
+	\subsection{Subsec}
+	The following is an example of a \texttt{subsec}. It is like a subsection but do not create any new numbering. It just creates a new paragraph with the argument as the title of the paragraph. Some texts are required before calling the \verb|subsec| command as it always invokes a \texttt{newline}.
+	\subsec{Example} does this.
+	\begin{verbatim}
+		\subsec{Example} does this.
+	\end{verbatim}
+	
 	
 	\newpage
 	\section{Algorithm}\label{sec:algo}
@@ -359,27 +374,32 @@
 		\caption{\textsc{ExampleAlgorithm}}\label{alg:1}
 		\begin{algorithmic}[1]
 			\Require \texttt{var1}, \texttt{var2}, $N$ 
-			\Ensure \texttt{var1} $\gets$ 1, \texttt{var2} $\gets$ 1, \texttt{flag} $\gets$ 0
-			\Comment This is just an example algorithm. These logics don't mean shit.
-			\Repeat
-				\For{$i=0$ \textbf{to} $10$}	
-					\While{\texttt{flag}}
-						\State \texttt{var1} $\gets$ \textsc{DoSomeShit}
-						\State \texttt{var2} $\gets$ \textsc{DoSomeMoreShit}
-						\If{\texttt{var1} $< N$}
-							\State \texttt{flag} $\gets 1$
-						\ElsIf{\texttt{var1} $= N$}
-							\State \texttt{flag} $\gets 0$
-						\Else
-							\State \texttt{var3} $\gets$ \texttt{var1} $+$ \texttt{var2}
-						\EndIf
-					\EndWhile
-				\EndFor
-			\Until \textsc{SomeConditionIsMet}
-			\Loop
-				\State \textsc{SomeInfiniteLoopShit}
-				\State \Print{some shit}
+			\Ensure \texttt{var1} $\gets$ 1, \texttt{var2} $\gets$ 1, \texttt{flag} $\gets$ 0 
+			\Input \texttt{var1}, \texttt{var2}, $N$
+			\Init \texttt{var1} $\gets$ 1, \texttt{var2} $\gets$ 1, \texttt{flag} $\gets$ 0 
+			\Output \texttt{var3}
+			\Comment All five commands are equally valid
+			\Repeat \Comment{Example: \texttt{repeat}}
+				\State \textsc{SomeSteps}
+			\Until \textsc{SomeConditionIsMet}	
+			\For{$i=0$ \To $10$} \Comment{Example: \texttt{for} loop}
+				\State \textsc{SomeStepsForLoop}
+			\EndFor
+			\While{\texttt{flag}} \Comment{Example: \texttt{while} loop}
+				\State \texttt{var1} $\gets$ \textsc{DoSomeShit}
+				\State \texttt{var2} $\gets$ \textsc{DoSomeMoreShit}
+			\EndWhile
+			\Loop \Comment{Example: \texttt{loop}}
+				\State \textsc{SomeInfiniteLoopStuff}
 			\EndLoop
+			\If{\texttt{var1} $< N$}\Comment{Example: \texttt{if-else if- else}}
+				\State \texttt{flag} $\gets 1$
+			\ElsIf{\texttt{var1} $= N$}
+				\State \texttt{flag} $\gets 0$
+			\Else
+				\State \texttt{var3} $\gets$ \texttt{var1} $+$ \texttt{var2}
+			\EndIf
+			\State \Print{some results}
 			\State \Return \texttt{var3}
 		\end{algorithmic}
 	\end{algorithm}
@@ -388,29 +408,32 @@
 		\caption{\textsc{ExampleAlgorithm}}\label{alg:1}
 		\begin{algorithmic}[1]
 			\Require \texttt{var1}, \texttt{var2}, $N$ 
-			\Ensure \texttt{var1} $\gets$ 1, \texttt{var2} $\gets$ 1, \texttt{flag} $\gets$ 0
-			\Comment This is just an example algorithm. These logics don't mean shit.
-			\Repeat
-			\For{$i=0$ \textbf{to} $10$}	
-				\While{\texttt{flag}}
-					\State \texttt{var1} $\gets$ \textsc{DoSomeShit}
-					
-					\State \texttt{var2} $\gets$ \textsc{DoSomeMoreShit}
-					
-					\If{\texttt{var1} $< N$}
-						\State \texttt{flag} $\gets 1$
-					\ElsIf{\texttt{var1} $= N$}
-						\State \texttt{flag} $\gets 0$
-					\Else
-						\State \texttt{var3} $\gets$ \texttt{var1} $+$ \texttt{var2}
-					\EndIf
-				\EndWhile
+			\Ensure \texttt{var1} $\gets$ 1, \texttt{var2} $\gets$ 1, \texttt{flag} $\gets$ 0 
+			\Input \texttt{var1}, \texttt{var2}, $N$
+			\Init \texttt{var1} $\gets$ 1, \texttt{var2} $\gets$ 1, \texttt{flag} $\gets$ 0 
+			\Output \texttt{var3}
+			\Comment All five commands are equally valid
+			\Repeat \Comment{Example: \texttt{repeat}}
+				\State \textsc{SomeSteps}
+			\Until \textsc{SomeConditionIsMet}	
+			\For{$i=0$ \To $10$} \Comment{Example: \texttt{for} loop}
+				\State \textsc{SomeStepsForLoop}
 			\EndFor
-			\Until \textsc{SomeConditionIsMet}
-			\Loop
-				\State \textsc{SomeInfiniteLoopShit}
-				\State \Print{some shit}
+			\While{\texttt{flag}} \Comment{Example: \texttt{while} loop}
+				\State \texttt{var1} $\gets$ \textsc{DoSomeShit}
+				\State \texttt{var2} $\gets$ \textsc{DoSomeMoreShit}
+			\EndWhile
+			\Loop \Comment{Example: \texttt{loop}}
+				\State \textsc{SomeInfiniteLoopStuff}
 			\EndLoop
+			\If{\texttt{var1} $< N$}\Comment{Example: \texttt{if-else if- else}}
+				\State \texttt{flag} $\gets 1$
+			\ElsIf{\texttt{var1} $= N$}
+				\State \texttt{flag} $\gets 0$
+			\Else
+				\State \texttt{var3} $\gets$ \texttt{var1} $+$ \texttt{var2}
+			\EndIf
+			\State \Print{some results}
 			\State \Return \texttt{var3}
 		\end{algorithmic}
 	\end{algorithm}

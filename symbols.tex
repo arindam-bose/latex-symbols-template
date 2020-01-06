@@ -9,7 +9,7 @@
 \usepackage[dvipsnames]{xcolor}
 
 \def \Author{Arindam~Bose}
-\def \Version{2.0.06}
+\def \Version{2.0.08}
 \def \Update{\today}
 
 % Lower case bold English alphabets
@@ -242,12 +242,15 @@
 \def\deg{^\circ}
 \def\Oh#1{\mathcal{O}\left(#1\right)}
 \def\oh#1{o\left(#1\right)}
+\def\d#1{\mathrm{d}#1}
 \def\st{~\mathrm{s.t.}~}
 \def\ow{~\mathrm{otherwise}~}
 \def\ew{~\mathrm{elsewhere}~}
-\def\eg{\textit{e.g.}}
-\def\ie{\textit{i.e.}}
-\def\etal{\textit{et al.}}
+\def\eg{\emph{e.g.}}
+\def\ie{\emph{i.e.}}
+\def\etal{\emph{et al.}}
+\def\etc{\emph{etc.}}
+\def\viz{\emph{viz.}}
 
 % Basic text colors
 \def\white#1{\textcolor{white}{#1}}
@@ -341,11 +344,21 @@
 \declaretheorem[style=definition,name=Remark,qed=$\blacksquare$]{remark}
 
 % algorithms
-\renewcommand{\algorithmicrequire}{\textbf{Input:}}
-\renewcommand{\algorithmicensure}{\textbf{Initialize:}}
+%\renewcommand{\algorithmicrequire}{\textbf{Input:}}
+%\renewcommand{\algorithmicensure}{\textbf{Initialize:}}
+\algnewcommand\algorithmicinput{\textbf{Input:}}
+\algnewcommand\Input{\item[\algorithmicinput]}
+\algnewcommand\algorithmicoutput{\textbf{Output:}}
+\algnewcommand\Output{\item[\algorithmicoutput]}
+\algnewcommand\algorithmicinit{\textbf{Initialize:}}
+\algnewcommand\Init{\item[\algorithmicinit]}
 \def\Print#1{\textbf{print}~#1}
+\def\To{\textbf{to}~}
 
 % underbrace inside a matrix environment
 \newcommand\undermat[2]{
 	\makebox[0pt][l]{${\underbrace{\hphantom{
 					\begin{matrix}#1\end{matrix}}}_{\text{$#2$}}}$}#1}
+
+% subsec
+\newcommand{\subsec}[1]{\newline{\textbf{#1~}}}
