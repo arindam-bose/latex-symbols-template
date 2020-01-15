@@ -1,4 +1,4 @@
-# Latex symbols template (2.0.08)
+# Latex symbols template (2.0.10)
 Short symbol commands for <img src="https://latex.codecogs.com/gif.latex?\LaTeX" title="\LaTeX" /></br>
 Warning Note: Not backward compatible with anything before version 2.0.00.
 
@@ -153,7 +153,7 @@ If you use `algorithmic` inside `algorithm` environment,
 | `\Oh{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{O}(N)" /> | `\oh{N}` | <img src="https://latex.codecogs.com/gif.latex?o(N)" /> | `\st` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{s.t.}" /> |
 | `\ow` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{otherwise}" /> | `\ew` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{elsewhere}" /> | `\eg` | <img src="https://latex.codecogs.com/gif.latex?\textit{e.g.}" /> |
 | `\ie` | <img src="https://latex.codecogs.com/gif.latex?\textit{i.e.}" /> | `\etal` | <img src="https://latex.codecogs.com/gif.latex?\textit{et%20al.}" /> | `\etc` | <img src="https://latex.codecogs.com/gif.latex?\textit{etc.}" /> |
-| `\viz` | <img src="https://latex.codecogs.com/gif.latex?\textit{viz.}" /> | `\d{y}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{d}y" /> |  | |
+| `\viz` | <img src="https://latex.codecogs.com/gif.latex?\textit{viz.}" /> | `\d{y}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{d}y" /> | `\conv` | <img src="https://latex.codecogs.com/gif.latex?\circledast" /> |
 
 #### Basic text colors
 | Syntax | Description | Syntax | Description | Syntax | Description |
