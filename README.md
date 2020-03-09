@@ -1,4 +1,4 @@
-# Latex symbols template (2.0.10)
+# Latex symbols template (2.0.11)
 Short symbol commands for <img src="https://latex.codecogs.com/gif.latex?\LaTeX" title="\LaTeX" /></br>
 Warning Note: Not backward compatible with anything before version 2.0.00.
 
