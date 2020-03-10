@@ -1,5 +1,5 @@
 \documentclass{article}
-\usepackage{float}
+\usepackage{float, array}
 \usepackage[margin=0.8in]{geometry}
 \usepackage{lipsum, fancyvrb, fvextra}
 \input{symbols.tex}
@@ -213,6 +213,7 @@
 
 	\subsection{Misc.}
 	\begin{table}[H]
+		\setlength\extrarowheight{6pt}
 		\begin{tabular}{|l|l|l|l|l|l|}
 			\hline
 			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description	 \\
@@ -228,7 +229,7 @@
 			\verb|\ow|	&	$\ow$	&	\verb|\ew|	&	$\ew$	&	\verb|\eg|	&	\eg \\
 			\verb|\ie|	&	\ie	&	\verb|\etal|	&	\etal	&	\verb|\etc|	&	\etc \\
 			\verb|\viz|	&	\viz & \verb|\d{y}|	&	$\d{y}$	&	\verb|\conv|	&	$\conv$	\\
-			\verb|\wrt|	&	\wrt & 	&		&		&		\\
+			\verb|\wrt|	&	\wrt & \verb|\parfrac{\xi}{x}|	&	$\parfrac{\xi}{x}$	&		&		\\
 			\hline	
 		\end{tabular}
 	\end{table}
