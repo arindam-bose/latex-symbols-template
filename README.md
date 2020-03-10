@@ -154,7 +154,7 @@ If you use `algorithmic` inside `algorithm` environment,
 | `\ow` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{otherwise}" /> | `\ew` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{elsewhere}" /> | `\eg` | <img src="https://latex.codecogs.com/gif.latex?\textit{e.g.}" /> |
 | `\ie` | <img src="https://latex.codecogs.com/gif.latex?\textit{i.e.}" /> | `\etal` | <img src="https://latex.codecogs.com/gif.latex?\textit{et%20al.}" /> | `\etc` | <img src="https://latex.codecogs.com/gif.latex?\textit{etc.}" /> |
 | `\viz` | <img src="https://latex.codecogs.com/gif.latex?\textit{viz.}" /> | `\d{y}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{d}y" /> | `\conv` | <img src="https://latex.codecogs.com/gif.latex?\circledast" /> |
-| `\wrt` | <img src="https://latex.codecogs.com/gif.latex?\textit{w.r.t.}" /> | `\parfrac{\xi}{x}` | <img src="https://latex.codecogs.com/gif.latex?\dfrac{\partial\xi}{\partial x}" /> |  |  |
+| `\wrt` | <img src="https://latex.codecogs.com/gif.latex?\textit{w.r.t.}" /> | `\parfrac{\xi}{x}` | <img src="https://latex.codecogs.com/gif.latex?\dfrac{\partial\xi}{\partial&space;x}" /> |  |  |
 
 #### Basic text colors
 | Syntax | Description | Syntax | Description | Syntax | Description |
