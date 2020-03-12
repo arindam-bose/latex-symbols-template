@@ -1,4 +1,4 @@
-# Latex symbols template (2.0.12)
+# Latex symbols template (2.0.13)
 Short symbol commands for <img src="https://latex.codecogs.com/gif.latex?\LaTeX" title="\LaTeX" /></br>
 Warning Note: Not backward compatible with anything before version 2.0.00.
 
@@ -147,14 +147,14 @@ If you use `algorithmic` inside `algorithm` environment,
 | `\acsc{x}` | <img src="https://latex.codecogs.com/gif.latex?\csc^{-1}(x)" /> | `\asec{x}` | <img src="https://latex.codecogs.com/gif.latex?\sec^{-1}(x)" /> | `\acot{x}` | <img src="https://latex.codecogs.com/gif.latex?\cot^{-1}(x)" /> |
 | `\implies` | <img src="https://latex.codecogs.com/gif.latex?\Rightarrow" /> | `\half` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{2}" /> | `\roothalf` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{\sqrt{2}}" /> |
 | `\third` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{3}" /> | `\quarter` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{4}" /> | `\fourth` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{4}" /> |
-| `\fifth` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{5}" /> | `\threequarter` | <img src="https://latex.codecogs.com/gif.latex?\frac{3}{4}" /> | `\ejomg` | <img src="https://latex.codecogs.com/gif.latex?e^{j\omega}" /> |
-| `\ejnomg` | <img src="https://latex.codecogs.com/gif.latex?e^{-j\omega}" /> | `\zinv` | <img src="https://latex.codecogs.com/gif.latex?z^{-1}" /> | `\sgn{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{sgn}(x)" /> |
+| `\fifth` | <img src="https://latex.codecogs.com/gif.latex?\frac{1}{5}" /> | `\threequarter` | <img src="https://latex.codecogs.com/gif.latex?\frac{3}{4}" /> | `\ejomg[k]` | <img src="https://latex.codecogs.com/gif.latex?e^{jk\omega}" /> |
+| `\ejnomg[k]` | <img src="https://latex.codecogs.com/gif.latex?e^{-jk\omega}" /> | `\zinv[k]` | <img src="https://latex.codecogs.com/gif.latex?z^{-k}" /> | `\sgn{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{sgn}(x)" /> |
 | `\sign{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{sign}(x)" /> | `\csign{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{csign}(x)" /> | `X\deg` | <img src="https://latex.codecogs.com/gif.latex?X^\circ" /> |
 | `\Oh{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathcal{O}(N)" /> | `\oh{N}` | <img src="https://latex.codecogs.com/gif.latex?o(N)" /> | `\st` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{s.t.}" /> |
 | `\ow` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{otherwise}" /> | `\ew` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{elsewhere}" /> | `\eg` | <img src="https://latex.codecogs.com/gif.latex?\textit{e.g.}" /> |
 | `\ie` | <img src="https://latex.codecogs.com/gif.latex?\textit{i.e.}" /> | `\etal` | <img src="https://latex.codecogs.com/gif.latex?\textit{et%20al.}" /> | `\etc` | <img src="https://latex.codecogs.com/gif.latex?\textit{etc.}" /> |
 | `\viz` | <img src="https://latex.codecogs.com/gif.latex?\textit{viz.}" /> | `\d{y}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{d}y" /> | `\conv` | <img src="https://latex.codecogs.com/gif.latex?\circledast" /> |
-| `\wrt` | <img src="https://latex.codecogs.com/gif.latex?\textit{w.r.t.}" /> | `\parfrac{\xi}{x}` | <img src="https://latex.codecogs.com/gif.latex?\dfrac{\partial\xi}{\partial&space;x}" /> |  |  |
+| `\wrt` | <img src="https://latex.codecogs.com/gif.latex?\textit{w.r.t.}" /> | `\deriv[k]{\xi}{x}` | <img src="https://latex.codecogs.com/gif.latex?\dfrac{d^k\xi}{dx^k}" /> | `\parderiv[k]{\xi}{x}` | <img src="https://latex.codecogs.com/gif.latex?\dfrac{\partial^k\xi}{\partial x^k}" /> |
 
 #### Basic text colors
 | Syntax | Description | Syntax | Description | Syntax | Description |

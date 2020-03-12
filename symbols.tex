@@ -9,7 +9,7 @@
 \usepackage[dvipsnames]{xcolor}
 
 \def \Author{Arindam~Bose}
-\def \Version{2.0.12}
+\def \Version{2.0.13}
 \def \Update{\today}
 
 % Lower case bold English alphabets
@@ -197,16 +197,16 @@
 \def\bone{\boldsymbol{1}}
 
 % Sets and notations
-\newcommand{\binaryB}[1]{\mathds{B}^{#1}}
-\newcommand{\complexC}[1]{\mathds{C}^{#1}}
+\newcommand{\binaryB}[1][]{\mathds{B}^{#1}}
+\newcommand{\complexC}[1][]{\mathds{C}^{#1}}
 \newcommand{\expecE}[1]{\mathds{E}\left\{{#1}\right\}}
-\newcommand{\naturalN}[1]{\mathds{N}^{#1}}
+\newcommand{\naturalN}[1][]{\mathds{N}^{#1}}
 \newcommand{\probP}[1]{\mathds{P}\mathrm{r}\left\{{#1}\right\}}
-\newcommand{\rationalQ}[1]{\mathds{Q}^{#1}}
-\newcommand{\realR}[1]{\mathds{R}^{#1}}
-\newcommand{\realRp}[1]{\mathds{R}_{+}^{#1}}
-\newcommand{\realRn}[1]{\mathds{R}_{-}^{#1}}
-\newcommand{\integerZ}[1]{\mathds{Z}^{#1}}
+\newcommand{\rationalQ}[1][]{\mathds{Q}^{#1}}
+\newcommand{\realR}[1][]{\mathds{R}^{#1}}
+\newcommand{\realRp}[1][]{\mathds{R}_{+}^{#1}}
+\newcommand{\realRn}[1][]{\mathds{R}_{-}^{#1}}
+\newcommand{\integerZ}[1][]{\mathds{Z}^{#1}}
 
 % Matrix terms
 \def\tr#1{\mathrm{Tr}\left(#1\right)}
@@ -225,7 +225,8 @@
 \def\acsc#1{\csc^{-1}\left(#1\right)}
 \def\asec#1{\sec^{-1}\left(#1\right)}
 \def\acot#1{\cot^{-1}\left(#1\right)}
-\def\parfrac#1#2{\dfrac{\partial #1}{\partial #2}}
+\newcommand{\parderiv}[3][]{\dfrac{\partial^{#1} #2}{\partial #3^{#1}}}
+\newcommand{\deriv}[3][]{\dfrac{d^{#1} #2}{d#3^{#1}}}
 \def\implies{\Rightarrow}
 \def\half{\dfrac{1}{2}}
 \def\roothalf{\dfrac{1}{\sqrt{2}}}
@@ -234,9 +235,9 @@
 \def\fourth{\dfrac{1}{4}}
 \def\fifth{\dfrac{1}{5}}
 \def\threequarter{\dfrac{3}{4}}
-\def\ejomg{e^{j\omega}}
-\def\ejnomg{e^{-j\omega}}
-\def\zinv{z^{-1}}
+\newcommand{\ejomg}[1][]{e^{j#1\omega}}
+\newcommand{\ejnomg}[1][]{e^{-j#1\omega}}
+\newcommand{\zinv}[1][]{z^{\ifx&#1&-1\else-#1\fi}}
 \def\sgn#1{\mathrm{sgn}\left(#1\right)}
 \def\sign#1{\mathrm{sign}\left(#1\right)}
 \def\csign#1{\mathrm{csign}\left(#1\right)}

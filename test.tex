@@ -20,6 +20,7 @@
 		\item Download the \texttt{symbols.tex} file and put is in the same folder as that of the main \texttt{.tex} file.
 		\item Add \verb|\input{symbols.tex}| after all \verb|\usepackage{}| headers in the main \texttt{.tex} file.
 		\item Refer to \texttt{test.tex} and \texttt{test.pdf} for further help.
+		\item Note that, $[\cdot]:$ Optional argument and $\{\cdot\}:$ Mandatory argument
 	\end{enumerate}
 	
 	\section{Packages used:}
@@ -190,10 +191,10 @@
 			\hline
 			Syntax	&	Description	&	Syntax	&	Description	&	Syntax	&	Description \\
 			\hline
-			\verb|\binaryB{N}|	&	$\binaryB{N}$	&	\verb|\complexC{N}|	&	$\complexC{N}$	&	\verb|\expecE{\bx}|	&	$\expecE{\bx}$\\
-			\verb|\naturalN{N}|	&	$\naturalN{N}$	&	\verb|\probP{\bx}|	&	$\probP{\bx}$	&	\verb|\rationalQ{N}|	&	$\rationalQ{N}$\\
-			\verb|\realR{N}|	&	$\realR{N}$	&	\verb|\realRp{N}|	&	$\realRp{N}$	&	\verb|\realRn{N}|	&	$\realRn{N}$\\
-			\verb|\integerZ{N}|	&	$\integerZ{N}$	&		&		&		&	\\
+			\verb|\binaryB[N]|	&	$\binaryB[N]$	&	\verb|\complexC[N]|	&	$\complexC[N]$	&	\verb|\expecE{\bx}|	&	$\expecE{\bx}$\\
+			\verb|\naturalN[N]|	&	$\naturalN[N]$	&	\verb|\probP{\bx}|	&	$\probP{\bx}$	&	\verb|\rationalQ[N]|	&	$\rationalQ[N]$\\
+			\verb|\realR[N]|	&	$\realR[N]$	&	\verb|\realRp[N]|	&	$\realRp[N]$	&	\verb|\realRn[N]|	&	$\realRn[N]$\\
+			\verb|\integerZ[N]|	&	$\integerZ[N]$	&		&		&		&	\\
 			\hline	
 		\end{tabular}
 	\end{table}
@@ -222,14 +223,14 @@
 			\verb|\acsc{x}|	&	$\acsc{x}$	&	\verb|\asec{x}|	&	$\asec{x}$	&	\verb|\acot{x}|	&	$\acot{x}$ \\
 			\verb|\implies|	&	$\implies$	&	\verb|\half|	&	$\half$	&	\verb|\roothalf|	&	$\roothalf$ \\
 			\verb|\third|	&	$\third$	&	\verb|\quarter|	&	$\quarter$	&	\verb|\fourth|	&	$\fourth$ \\
-			\verb|\fifth|	&	$\fifth$	&	\verb|\threequarter|	&	$\threequarter$	&	\verb|\ejomg|	&	$\ejomg$ \\
-			\verb|\ejnomg|	&	$\ejnomg$	&	\verb|\zinv|	&	$\zinv$	&	\verb|\sgn{x}|	&	$\sgn{x}$ \\
+			\verb|\fifth|	&	$\fifth$	&	\verb|\threequarter|	&	$\threequarter$	&	\verb|\ejomg[k]|	&	$\ejomg[k]$ \\
+			\verb|\ejnomg[k]|	&	$\ejnomg[k]$	&	\verb|\zinv[k]|	&	$\zinv[k]$	&	\verb|\sgn{x}|	&	$\sgn{x}$ \\
 			\verb|\sign{x}|	&	$\sign{x}$	&	\verb|\csign{x}|	&	$\csign{x}$ & \verb|X\deg|	&	$X\deg$	\\			
 			\verb|\Oh{N}|	&	$\Oh{N}$	&	\verb|\oh{N}|	&	$\oh{N}$	&	\verb|\st|	&	$\st$ \\
 			\verb|\ow|	&	$\ow$	&	\verb|\ew|	&	$\ew$	&	\verb|\eg|	&	\eg \\
 			\verb|\ie|	&	\ie	&	\verb|\etal|	&	\etal	&	\verb|\etc|	&	\etc \\
 			\verb|\viz|	&	\viz & \verb|\d{y}|	&	$\d{y}$	&	\verb|\conv|	&	$\conv$	\\
-			\verb|\wrt|	&	\wrt & \verb|\parfrac{\xi}{x}|	&	$\parfrac{\xi}{x}$	&		&		\\
+			\verb|\wrt|	&	\wrt & \verb|\deriv[k]{\xi}{x}|	&	$\deriv[k]{\xi}{x}$	&	\verb|\parderiv[k]{\xi}{x}|	&	$\parderiv[k]{\xi}{x}$	\\
 			\hline	
 		\end{tabular}
 	\end{table}
