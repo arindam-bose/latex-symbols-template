@@ -6,6 +6,7 @@ Warning Note: Not backward compatible with anything before version 2.0.00.
 1. Download the `symbols.tex` file and put is in the same folder as that of the main `.tex` file.
 2. Add `\input{symbols.tex}` after all `\usepackage{}` headers in the main `.tex` file.
 3. Refer to `test.tex` and `test.pdf` for further help.
+4. Note that `[.]`: Optional argument and `{.}`: Mandatory argument
 
 
 ### Required packages (included):
@@ -126,10 +127,10 @@ If you use `algorithmic` inside `algorithm` environment,
 #### Sets
 | Syntax | Description | Syntax | Description | Syntax | Description |
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| `\binaryB{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{B}^N" /> | `\complexC{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{C}^N" /> | `\expecE{\bx}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{E}\{\boldsymbol{x}\}" /> |
-| `\naturalN{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{N}^N" /> | `\probP{\bx}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{P}\mathrm{r}\{\boldsymbol{x}\}" /> | `\rationalQ{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{Q}^N" /> |
-| `\realR{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}^N" /> | `\realRp{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}_{+}^N" /> | `\realRn{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}_{-}^N" /> |
-| `\integerZ{N}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{Z}^N" /> |
+| `\binaryB[N]` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{B}^N" /> | `\complexC[N]` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{C}^N" /> | `\expecE{\bx}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{E}\{\boldsymbol{x}\}" /> |
+| `\naturalN[N]` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{N}^N" /> | `\probP{\bx}` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{P}\mathrm{r}\{\boldsymbol{x}\}" /> | `\rationalQ[N]` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{Q}^N" /> |
+| `\realR[N]` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}^N" /> | `\realRp[N]` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}_{+}^N" /> | `\realRn[N]` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{R}_{-}^N" /> |
+| `\integerZ[N]` | <img src="https://latex.codecogs.com/gif.latex?\mathbb{Z}^N" /> |
 
 
 #### Matrix terms
