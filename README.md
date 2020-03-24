@@ -1,4 +1,4 @@
-# Latex symbols template (2.0.13)
+# Latex symbols template (2.0.14)
 Short symbol commands for <img src="https://latex.codecogs.com/gif.latex?\LaTeX" title="\LaTeX" /></br>
 Warning Note: Not backward compatible with anything before version 2.0.00.
 
@@ -156,6 +156,7 @@ If you use `algorithmic` inside `algorithm` environment,
 | `\ie` | <img src="https://latex.codecogs.com/gif.latex?\textit{i.e.}" /> | `\etal` | <img src="https://latex.codecogs.com/gif.latex?\textit{et%20al.}" /> | `\etc` | <img src="https://latex.codecogs.com/gif.latex?\textit{etc.}" /> |
 | `\viz` | <img src="https://latex.codecogs.com/gif.latex?\textit{viz.}" /> | `\d{y}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{d}y" /> | `\conv` | <img src="https://latex.codecogs.com/gif.latex?\circledast" /> |
 | `\wrt` | <img src="https://latex.codecogs.com/gif.latex?\textit{w.r.t.}" /> | `\deriv[k]{\xi}{x}` | <img src="https://latex.codecogs.com/gif.latex?\dfrac{d^k\xi}{dx^k}" /> | `\parderiv[k]{\xi}{x}` | <img src="https://latex.codecogs.com/gif.latex?\dfrac{\partial^k\xi}{\partial&space;x^k}" /> |
+| `1\ord{st}` | <img src="https://latex.codecogs.com/gif.latex?1^\text{st}" /> |  |  |  |  |
 
 #### Basic text colors
 | Syntax | Description | Syntax | Description | Syntax | Description |
