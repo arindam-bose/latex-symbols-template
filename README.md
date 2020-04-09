@@ -1,4 +1,4 @@
-# Latex symbols template (2.0.14)
+# Latex symbols template (2.0.15)
 Short symbol commands for <img src="https://latex.codecogs.com/gif.latex?\LaTeX" title="\LaTeX" /></br>
 Warning Note: Not backward compatible with anything before version 2.0.00.
 
@@ -136,9 +136,10 @@ If you use `algorithmic` inside `algorithm` environment,
 #### Matrix terms
 | Syntax | Description | Syntax | Description | Syntax | Description | 
 | ----------- | ----------- | ----------- | ----------- | ----------- | ----------- |
-| `\tr{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{Tr}(X)" /> | `\vec{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{vec}(X)" /> | `\diag{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{diag}(X)" /> |
-| `\Diag{\bx}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{Diag}(\boldsymbol{x})" /> | `\bdiag{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{diag}(X)" /> | `\cov{\bx}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{cov}(\boldsymbol{x})" /> |
-| `\Cov{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{Cov}(X)" /> | `\bcov{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{cov}(x)" /> |
+| `\tr{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{tr}(X)" /> | `\Tr{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{Tr}(X)" /> | `\vec{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{vec}(X)" /> | 
+| `\diag{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{diag}(X)" /> | `\Diag{\bx}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{Diag}(\boldsymbol{x})" /> | `\bdiag{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{diag}(X)" /> |
+| `\cov{\bx}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{cov}(\boldsymbol{x})" /> | `\Cov{X}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{Cov}(X)" /> | `\bcov{x}` | <img src="https://latex.codecogs.com/gif.latex?\mathbf{cov}(x)" /> |
+| `\eig{\bx}` | <img src="https://latex.codecogs.com/gif.latex?\mathrm{eig}(\boldsymbol{x})" /> |  |  |  |  |
 
 
 #### Misc.

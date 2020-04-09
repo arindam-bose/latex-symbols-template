@@ -9,7 +9,7 @@
 \usepackage[dvipsnames]{xcolor}
 
 \def \Author{Arindam~Bose}
-\def \Version{2.0.14}
+\def \Version{2.0.15}
 \def \Update{\today}
 
 % Lower case bold English alphabets
@@ -209,7 +209,8 @@
 \newcommand{\integerZ}[1][]{\mathds{Z}^{#1}}
 
 % Matrix terms
-\def\tr#1{\mathrm{Tr}\left(#1\right)}
+\def\tr#1{\mathrm{tr}\left(#1\right)}
+\def\Tr#1{\mathrm{Tr}\left(#1\right)}
 \def\vec#1{\mathrm{vec}\left(#1\right)}
 \def\diag#1{\mathrm{diag}\left(#1\right)}
 \def\Diag#1{\mathrm{Diag}\left(#1\right)}
@@ -246,8 +247,8 @@
 \def\oh#1{o\left(#1\right)}
 \def\d#1{\mathrm{d}#1}
 \def\st{~\mathrm{s.t.}~}
-\def\ow{~\mathrm{otherwise}~}
-\def\ew{~\mathrm{elsewhere}~}
+\def\ow{~\mathrm{otherwise}}
+\def\ew{~\mathrm{elsewhere}}
 \def\eg{\emph{e.g.}}
 \def\ie{\emph{i.e.}}
 \def\wrt{\emph{w.r.t.~}}
@@ -256,6 +257,7 @@
 \def\viz{\emph{viz.}}
 \def\conv{\circledast}
 \def\ord#1{^\text{#1}}
+\def\eig#1{\mathrm{eig}\left(#1\right)}
 
 % Basic text colors
 \def\white#1{\textcolor{white}{#1}}
